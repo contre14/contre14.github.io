@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publications — Alexander Contreras</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">Alexander Contreras</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
+        <a href="research.html" class="active">Experience</a>
+        <div class="dropdown-menu">
+          <a href="research.html">Research</a>
+          <a href="projects.html">Projects</a>
+          <a href="publications.html">Publications</a>
+        </div>
+      </li>
+      <li><a href="awards.html">Awards</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="section">
+  <div class="container">
+    <p class="eyebrow" style="color:var(--accent);font-weight:600">EXPERIENCE</p>
+    <h1>Publications</h1>
+    <p class="lead muted" style="margin-top:10px">Peer-reviewed research output.</p>
+
+    <div class="card" style="margin-top:36px">
+      <div class="grid grid-2" style="align-items:start">
+        <a href="assets/files/dynamic-wetting-paper.pdf" target="_blank" rel="noopener">
+          <img class="card-img doc" src="assets/thumbs/paper.png" alt="npj Advanced Manufacturing paper first page">
+        </a>
+        <div>
+          <div class="meta">2024 · npj Advanced Manufacturing (Nature)</div>
+          <h3>Polybutadiene structural effects on dynamic wetting</h3>
+          <p style="color:var(--ink);font-weight:600;margin-bottom:8px">
+            S. D. Raissi, M. A. Magaña, <span style="color:var(--accent)">A. Contreras</span>,
+            S. Wei, B. Brettmann &amp; J. Kalman
+          </p>
+          <p>
+            Investigates how polybutadiene binder structure governs the dynamic wetting and
+            spreading of droplets impacting ammonium perchlorate — key to expanding the design
+            space for binder-jetting additive manufacturing of composite propellants. Spreading
+            scales with t<sup>1/2</sup> in the inertia-dominated regime before transitioning to a
+            viscous regime; branched polymer variants spread up to 25% more by area than linear
+            variants. My contribution centered on high-speed experimental data reduction and
+            analysis (MATLAB).
+          </p>
+          <p style="margin-top:10px">
+            <a href="https://doi.org/10.1038/s44334-024-00007-8" target="_blank" rel="noopener">Read on publisher (DOI)</a> ·
+            <a href="assets/files/dynamic-wetting-paper.pdf" target="_blank" rel="noopener">Download PDF</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <a href="mailto:contre14@uci.edu">Email</a>·
+      <a href="https://www.linkedin.com/in/alex-contreras-ac" target="_blank" rel="noopener">LinkedIn</a>·
+      <a href="assets/files/Alex_Contreras_Resume.pdf">Résumé</a>
+    </div>
+    <p style="margin-top:10px">© <span id="yr"></span> Alexander Contreras · Irvine, CA</p>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>

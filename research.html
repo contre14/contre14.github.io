@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research — Alexander Contreras</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">Alexander Contreras</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
+        <a href="research.html" class="active">Experience</a>
+        <div class="dropdown-menu">
+          <a href="research.html">Research</a>
+          <a href="projects.html">Projects</a>
+          <a href="publications.html">Publications</a>
+        </div>
+      </li>
+      <li><a href="awards.html">Awards</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="section">
+  <div class="container">
+    <p class="eyebrow" style="color:var(--accent);font-weight:600">EXPERIENCE</p>
+    <h1>Research</h1>
+    <p class="lead muted" style="margin-top:10px">
+      Experimental and computational research in combustion, soft matter, and high-temperature flows.
+    </p>
+
+    <div class="grid" style="margin-top:36px;gap:28px">
+
+      <!-- NSF combustion -->
+      <div class="card">
+        <div class="grid grid-2" style="align-items:start">
+          <a href="assets/files/rsca-poster.pdf" target="_blank" rel="noopener">
+            <img class="card-img doc" src="assets/thumbs/rsca-poster.png" alt="RSCA research poster — non-Newtonian fluids under oscillatory forcing">
+          </a>
+          <div>
+            <div class="meta">Jun 2021 – May 2024 · CSU Long Beach</div>
+            <h3>NSF Researcher — Space &amp; Combustion Lab</h3>
+            <p>
+              Conducted benchtop experiments evaluating binder wettability for solid rocket
+              applications under Dr. Joseph Kalman. Automated MATLAB data reduction for 100+
+              high-speed test videos — extracting time-resolved metrics and standardized plots —
+              cutting processing time by ~50%. Maintained hardware inspections and QC records to
+              improve repeatability.
+            </p>
+            <div style="margin:8px 0">
+              <span class="tag">MATLAB</span><span class="tag">High-speed imaging</span><span class="tag">Combustion</span>
+            </div>
+            <p>
+              <a href="assets/files/rsca-poster.pdf" target="_blank" rel="noopener">View RSCA poster (PDF)</a> ·
+              <a href="publications.html">Resulting publication →</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Berkeley -->
+      <div class="card">
+        <div class="grid grid-2" style="align-items:start">
+          <a href="assets/files/berkeley-presentation.pdf" target="_blank" rel="noopener">
+            <img class="card-img doc" src="assets/thumbs/berkeley.png" alt="UC Berkeley summer research presentation">
+          </a>
+          <div>
+            <div class="meta">Jun 2022 – Jul 2022 · UC Berkeley</div>
+            <h3>Inclusive Excellence Researcher — Soft Matter &amp; Interfaces</h3>
+            <p>
+              Processed microscopy data in MATLAB to quantify droplet size, volume fraction, and
+              water transport across oil/surfactant trials. Designed microfluidic device concepts
+              in SolidWorks to improve flow control and droplet repeatability, and presented results
+              to 50+ attendees at the Berkeley 2022 Summer Symposium.
+            </p>
+            <div style="margin:8px 0">
+              <span class="tag">MATLAB</span><span class="tag">SolidWorks</span><span class="tag">Microfluidics</span>
+            </div>
+            <p><a href="assets/files/berkeley-presentation.pdf" target="_blank" rel="noopener">View presentation (PDF)</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- UCI graduate research -->
+      <div class="card">
+        <div class="meta">Jan 2026 – Present · UC Irvine</div>
+        <h3>Graduate Researcher — High-Temperature Flow Modeling</h3>
+        <p>
+          Developing a repeatable simulation and post-processing workflow for propulsion-relevant
+          non-equilibrium post-shock analysis. Automated parameter-sweep case generation, batch
+          execution, and output parsing on Linux with Python — reducing end-to-end turnaround by
+          ~60% across 50+ cases — and standardized post-processing metrics to hold &lt;2% variation
+          across re-runs.
+        </p>
+        <div style="margin:8px 0">
+          <span class="tag">Python</span><span class="tag">Linux</span><span class="tag">Non-equilibrium flows</span>
+        </div>
+        <p><a href="projects.html">See the shock-modeling project →</a></p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <a href="mailto:contre14@uci.edu">Email</a>·
+      <a href="https://www.linkedin.com/in/alex-contreras-ac" target="_blank" rel="noopener">LinkedIn</a>·
+      <a href="assets/files/Alex_Contreras_Resume.pdf">Résumé</a>
+    </div>
+    <p style="margin-top:10px">© <span id="yr"></span> Alexander Contreras · Irvine, CA</p>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>

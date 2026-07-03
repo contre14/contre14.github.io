@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Alexander Contreras</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">Alexander Contreras</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li class="dropdown">
+        <a href="research.html">Experience</a>
+        <div class="dropdown-menu">
+          <a href="research.html">Research</a>
+          <a href="projects.html">Projects</a>
+          <a href="publications.html">Publications</a>
+        </div>
+      </li>
+      <li><a href="awards.html">Awards</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="section">
+  <div class="container">
+    <h1>About me</h1>
+    <div class="grid grid-2" style="margin-top:28px;align-items:start">
+      <div>
+        <p class="lead">
+          I'm an aerospace engineer focused on propulsion and thermal-fluid systems. My work
+          spans experimental combustion research, computational shock-layer modeling, and
+          full-lifecycle hardware projects — and it's consistently about the same thing: making
+          complex analysis repeatable, documented, and trustworthy.
+        </p>
+        <p style="margin-top:16px">
+          I've automated MATLAB data-reduction pipelines for 100+ high-speed test videos, built
+          parameter-sweep simulation workflows on Linux in Python, and led a lunar-rover senior
+          design team as project manager and thermal systems lead. Along the way I co-authored a
+          peer-reviewed paper in <em>npj Advanced Manufacturing</em> and was a two-time NSF LSAMP
+          researcher.
+        </p>
+        <p style="margin-top:16px">
+          I'm now looking for industry roles where I can apply propulsion, thermal, and systems
+          engineering to real hardware — and keep raising the bar on how carefully the analysis
+          behind it is done.
+        </p>
+      </div>
+      <div class="card">
+        <div class="meta">QUICK FACTS</div>
+        <h3 style="margin-bottom:12px">Alexander Contreras</h3>
+        <p style="margin:0">📍 Irvine, CA · U.S. Citizen</p>
+        <p style="margin:6px 0 0">🎓 M.S. Aerospace Eng., UC Irvine</p>
+        <p style="margin:6px 0 0">✉️ <a href="mailto:contre14@uci.edu">contre14@uci.edu</a></p>
+        <p style="margin:6px 0 14px">🔗 <a href="https://www.linkedin.com/in/alex-contreras-ac" target="_blank" rel="noopener">LinkedIn</a></p>
+        <a class="btn" href="assets/files/Alex_Contreras_Resume.pdf" style="display:inline-block">Download résumé</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--soft">
+  <div class="container">
+    <h2>Education</h2>
+    <div style="margin-top:24px">
+      <div class="entry">
+        <div class="when">Expected December 2026</div>
+        <h3>M.S., Aerospace Engineering — Fluid Dynamics &amp; Propulsion</h3>
+        <div class="where">University of California, Irvine</div>
+        <p>GPA 3.47. Graduate research in high-temperature flow modeling and propulsion-relevant post-shock analysis.</p>
+      </div>
+      <div class="entry">
+        <div class="when">May 2024</div>
+        <h3>B.S., Aerospace Engineering</h3>
+        <div class="where">California State University, Long Beach</div>
+        <p>GPA 3.56. NSF LSAMP researcher, MATLAB Ambassador, and lunar-rover senior design project manager.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Skills &amp; tools</h2>
+    <p class="muted" style="margin:6px 0 18px">Software and engineering competencies I use day to day.</p>
+    <div>
+      <span class="tag">SolidWorks (CAD)</span>
+      <span class="tag">MATLAB</span>
+      <span class="tag">Python</span>
+      <span class="tag">Linux</span>
+      <span class="tag">Excel</span>
+      <span class="tag">Mechanical Design</span>
+      <span class="tag">Fluid / Thermal Analysis</span>
+      <span class="tag">Integration &amp; Testing</span>
+      <span class="tag">Quality Control</span>
+      <span class="tag">System V&amp;V</span>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <a href="mailto:contre14@uci.edu">Email</a>·
+      <a href="https://www.linkedin.com/in/alex-contreras-ac" target="_blank" rel="noopener">LinkedIn</a>·
+      <a href="assets/files/Alex_Contreras_Resume.pdf">Résumé</a>
+    </div>
+    <p style="margin-top:10px">© <span id="yr"></span> Alexander Contreras · Irvine, CA</p>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Alexander Contreras</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">Alexander Contreras</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
+        <a href="research.html" class="active">Experience</a>
+        <div class="dropdown-menu">
+          <a href="research.html">Research</a>
+          <a href="projects.html">Projects</a>
+          <a href="publications.html">Publications</a>
+        </div>
+      </li>
+      <li><a href="awards.html">Awards</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="section">
+  <div class="container">
+    <p class="eyebrow" style="color:var(--accent);font-weight:600">EXPERIENCE</p>
+    <h1>Projects</h1>
+    <p class="lead muted" style="margin-top:10px">
+      Hands-on engineering work — full reports, review packages, and source code included.
+    </p>
+
+    <div class="grid" style="margin-top:36px;gap:28px">
+
+      <!-- Lunar Rover -->
+      <div class="card">
+        <div class="grid grid-2" style="align-items:start">
+          <a href="assets/files/Alex_Contreras_LunarRover_CDR_Slides.pdf" target="_blank" rel="noopener">
+            <img class="card-img doc" src="assets/thumbs/lunar-radiator.png" alt="Lunar rover thermal radiator design — Alex Contreras' CDR slides">
+          </a>
+          <div>
+            <div class="meta">Aug 2023 – May 2024 · CSULB Senior Design</div>
+            <h3>Lunar Rover — Project Manager &amp; Thermal Systems Lead</h3>
+            <p>
+              Led an 8-person senior design team through a full design-review lifecycle. Designed
+              the radiator system in SolidWorks (heat-rejection area ~22 ft², ~59% lower heat-flux
+              density) and developed thermal-control requirements and thermal balance / vacuum test
+              plans across a −205°C to 100°C operating range. Ran trade studies on mass, power, cost,
+              and integration that cut estimated project cost by ~35%.
+            </p>
+            <div style="margin:8px 0">
+              <span class="tag">SolidWorks</span><span class="tag">Thermal Design</span><span class="tag">Systems Eng.</span><span class="tag">V&amp;V</span>
+            </div>
+            <p class="muted" style="font-size:.9rem">
+              Thermal design matured significantly from PDR to CDR — the initial passive-radiator
+              concept was refined into a heat-pipe-augmented (FHPL) radiator system as trade studies
+              and analysis closed out risks flagged at PDR.
+            </p>
+            <p style="font-weight:600;color:var(--ink)">
+              <a href="assets/files/Alex_Contreras_LunarRover_CDR_Slides.pdf" target="_blank" rel="noopener">▶ My CDR slides — Thermal Systems + Team Lead (29 slides)</a>
+            </p>
+            <p class="muted" style="font-size:.9rem">Full team review package (all subsystems):
+              <a href="assets/files/lunar-rover-Proposal.pdf" target="_blank" rel="noopener">Proposal</a> ·
+              <a href="assets/files/lunar-rover-SRR.pdf" target="_blank" rel="noopener">SRR</a> ·
+              <a href="assets/files/lunar-rover-PDR.pdf" target="_blank" rel="noopener">PDR</a> ·
+              <a href="assets/files/lunar-rover-CDR.pdf" target="_blank" rel="noopener">CDR</a> ·
+              <a href="assets/files/lunar-rover-SOW.pdf" target="_blank" rel="noopener">SOW</a> ·
+              <a href="assets/files/lunar-rover-IandT.pdf" target="_blank" rel="noopener">I&amp;T</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shock modeling -->
+      <div class="card">
+        <div class="grid grid-2" style="align-items:start">
+          <a href="assets/files/shock-modeling-report.pdf" target="_blank" rel="noopener">
+            <img class="card-img doc" src="assets/thumbs/shock.png" alt="Thermochemical nonequilibrium shock modeling report">
+          </a>
+          <div>
+            <div class="meta">Dec 2025 · UC Irvine</div>
+            <h3>Thermochemical Nonequilibrium Shock Modeling</h3>
+            <p>
+              Built a 1-D nitrogen shock-layer model in MATLAB/Python using Rankine–Hugoniot jump
+              conditions and a two-temperature N₂/N formulation to analyze post-shock relaxation.
+              Implemented a coupled ODE solver for species, velocity, translational temperature, and
+              vibrational temperature, then post-processed outputs into engineering plots and
+              equilibrium metrics.
+            </p>
+            <div style="margin:8px 0">
+              <span class="tag">Python</span><span class="tag">MATLAB</span><span class="tag">ODE solvers</span><span class="tag">Non-equilibrium</span>
+            </div>
+            <p>
+              <a href="assets/files/shock-modeling-report.pdf" target="_blank" rel="noopener">Read report (PDF)</a> ·
+              Source:
+              <a href="assets/files/shock-code/main.py" target="_blank" rel="noopener">main.py</a> ·
+              <a href="assets/files/shock-code/rh_jump.py" target="_blank" rel="noopener">rh_jump.py</a> ·
+              <a href="assets/files/shock-code/simulate.py" target="_blank" rel="noopener">simulate.py</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <a href="mailto:contre14@uci.edu">Email</a>·
+      <a href="https://www.linkedin.com/in/alex-contreras-ac" target="_blank" rel="noopener">LinkedIn</a>·
+      <a href="assets/files/Alex_Contreras_Resume.pdf">Résumé</a>
+    </div>
+    <p style="margin-top:10px">© <span id="yr"></span> Alexander Contreras · Irvine, CA</p>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>

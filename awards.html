@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awards — Alexander Contreras</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">Alexander Contreras</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
+        <a href="research.html">Experience</a>
+        <div class="dropdown-menu">
+          <a href="research.html">Research</a>
+          <a href="projects.html">Projects</a>
+          <a href="publications.html">Publications</a>
+        </div>
+      </li>
+      <li><a href="awards.html" class="active">Awards</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="section">
+  <div class="container">
+    <h1>Awards &amp; Recognition</h1>
+    <div class="grid grid-2" style="margin-top:32px">
+
+      <div class="card">
+        <div class="meta">2021–2023 · National Science Foundation</div>
+        <h3>2× NSF CSU-LSAMP Recipient</h3>
+        <p>
+          Selected twice for the NSF-funded Louis Stokes Alliance for Minority Participation
+          research program (2021–22 academic year, 2022 summer, and 2022–23 academic year),
+          supporting my combustion research at CSU Long Beach and my 2022 Week of RSCA poster.
+        </p>
+        <p style="margin-top:8px">
+          Offer letters:
+          <a href="assets/files/LSAMP-2021-22-offer.pdf" target="_blank" rel="noopener">2021–22</a> ·
+          <a href="assets/files/LSAMP-2022-summer-offer.pdf" target="_blank" rel="noopener">2022 Summer</a> ·
+          <a href="assets/files/LSAMP-2022-23-offer.pdf" target="_blank" rel="noopener">2022–23</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <a href="assets/files/aerospace-academy-info.pdf" target="_blank" rel="noopener">
+          <img class="card-img doc" src="assets/thumbs/aero.png" alt="Aerospace Corporation Dean's Leadership Academy">
+        </a>
+        <div class="meta">2021–2022</div>
+        <h3>Aerospace Corporation Dean's Leadership Academy</h3>
+        <p>
+          Selected for an exclusive cohort of high-achieving student leaders to connect with
+          executive-level industry and community members — past speakers include the CEO of The
+          Aerospace Corporation and VPs at Boeing — focused on developing leadership skills for
+          engineering careers.
+        </p>
+        <p style="margin-top:8px">
+          <a href="assets/files/aerospace-academy-info.pdf" target="_blank" rel="noopener">Program info</a> ·
+          <a href="assets/files/aerospace-academy-acceptance.pdf" target="_blank" rel="noopener">Acceptance</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section section--soft">
+  <div class="container">
+    <h2>Leadership &amp; Activities</h2>
+    <div style="margin-top:24px">
+      <div class="entry">
+        <div class="when">Oct 2023 – May 2024</div>
+        <h3>MATLAB Ambassador — MathWorks</h3>
+        <div class="where">CSU Long Beach</div>
+        <p>Led workshops introducing students to MATLAB and Simulink for design, modeling, analysis, and simulation, and built supplemental learning materials tied to coursework.</p>
+      </div>
+      <div class="entry">
+        <div class="when">Jun 2023 – Present</div>
+        <h3>Tutor — Professional Tutors of America, Inc.</h3>
+        <div class="where">Orange County, CA</div>
+        <p>Tutor students across grade levels in math, physics, and chemistry — translating technical concepts into clear explanations and coordinating with teachers and staff to track progress.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <a href="mailto:contre14@uci.edu">Email</a>·
+      <a href="https://www.linkedin.com/in/alex-contreras-ac" target="_blank" rel="noopener">LinkedIn</a>·
+      <a href="assets/files/Alex_Contreras_Resume.pdf">Résumé</a>
+    </div>
+    <p style="margin-top:10px">© <span id="yr"></span> Alexander Contreras · Irvine, CA</p>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
