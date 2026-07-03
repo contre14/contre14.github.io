@@ -33,100 +33,95 @@
   <div class="container">
     <p class="eyebrow" style="color:var(--accent);font-weight:600">EXPERIENCE</p>
     <h1>Projects</h1>
-    <p class="lead muted" style="margin-top:10px">
-      Hands-on engineering — the actual designs, models, and results, not just the report covers.
+    <p class="lead muted" style="margin-top:10px;margin-bottom:36px">
+      Hands-on engineering — the actual designs, models, and results.
     </p>
 
-    <!-- ============== Lunar Rover ============== -->
-    <div class="project">
-      <div class="meta">Aug 2023 – May 2024 · CSULB Senior Design (Team Auger)</div>
-      <h2>Lunar Rover — Thermal Control System</h2>
-      <div class="role">Project Manager &amp; Thermal Systems Lead · 8-person team</div>
-      <p>
-        I led an 8-person team through a full design-review lifecycle (Proposal → SRR → PDR → CDR)
-        for a lunar rover that had to survive permanently-shadowed crater conditions. As Thermal
-        Systems Lead I owned the thermal-control subsystem end to end: requirements, radiator sizing
-        in SolidWorks, the heat-pipe loop, and the thermal-vacuum test plan — keeping the avionics
-        alive across a −205 °C to 100 °C operating range.
-      </p>
+    <!-- Lunar Rover -->
+    <div class="pcard">
+      <img class="pcard-hero" src="assets/img/rover-external.jpg" alt="SolidWorks external view of the lunar rover with labeled subsystems">
+      <div class="pcard-body">
+        <div class="meta">Aug 2023 – May 2024 · CSULB Senior Design (Team Auger)</div>
+        <h2>Lunar Rover — Thermal Control System</h2>
+        <div class="role">Project Manager &amp; Thermal Systems Lead · 8-person team</div>
+        <p>
+          Led an 8-person team through a full design-review lifecycle (Proposal → SRR → PDR → CDR)
+          for a rover built to survive permanently-shadowed crater conditions. I owned the
+          thermal-control subsystem end to end.
+        </p>
+        <ul class="wins">
+          <li>Designed the radiator system in <b>SolidWorks</b> — ~22 ft² rejection area, ~59% lower heat-flux density</li>
+          <li>Architected an RHU + heat-pipe loop (FHPL) keeping avionics alive across <b>−205 °C to 100 °C</b></li>
+          <li>Ran mass/power/cost/integration trade studies that cut estimated project cost <b>~35%</b></li>
+          <li>Built the thermal-vacuum test plan and led the 8-person team to CDR</li>
+        </ul>
+        <div class="toolrow">
+          <span class="label">Tools</span>
+          <span class="tag">SolidWorks</span><span class="tag">Thermal Design</span><span class="tag">Systems Eng.</span><span class="tag">V&amp;V</span>
+        </div>
 
-      <figure class="figure">
-        <img src="assets/img/rover-external.jpg" alt="SolidWorks external view of the lunar rover with labeled subsystems">
-        <figcaption>Integrated rover design (SolidWorks) — external layout showing star tracker, antennas,
-          radiator, sensors, and the 6-independent-drive-wheel chassis. Overall footprint ~7 ft.</figcaption>
-      </figure>
+        <div class="support">
+          <div class="figure-grid">
+            <figure class="figure">
+              <img src="assets/img/radiator-design.jpg" alt="SolidWorks radiator panel design with dimensions">
+              <figcaption>Radiator panels (SolidWorks), sized for the required rejection area.</figcaption>
+            </figure>
+            <figure class="figure">
+              <img src="assets/img/thermal-design.jpg" alt="Thermal system overview on the rover">
+              <figcaption>Thermal layout — RHU, main + back radiators, and the heat-pipe loop.</figcaption>
+            </figure>
+          </div>
+        </div>
 
-      <p>
-        The thermal architecture pairs a radioisotope heater unit (RHU) with main and back radiator
-        panels, linked by a flexible heat-pipe loop (FHPL) that pulls waste heat off the electronics
-        box and rejects it to space. I ran trade studies on mass, power, cost, and integration that
-        cut estimated project cost ~35% and drove the radiator to ~22 ft² of rejection area (~59%
-        lower heat-flux density).
-      </p>
-
-      <figure class="figure">
-        <img src="assets/img/thermal-design.jpg" alt="Thermal system overview on the rover: RHU, main and back radiators, FHPL">
-        <figcaption>Thermal-control layout — RHU heat source, main + back radiator panels mounted on the
-          rover, and the flexible heat-pipe loop (FHPL) routing heat from the electronics to the radiators.</figcaption>
-      </figure>
-
-      <div class="figure-grid">
-        <figure class="figure">
-          <img src="assets/img/radiator-design.jpg" alt="SolidWorks radiator panel design with dimensions">
-          <figcaption>Radiator panel design (SolidWorks) — back and main panels sized for the required
-            rejection area.</figcaption>
-        </figure>
-        <figure class="figure">
-          <img src="assets/img/fhpl-design.jpg" alt="Flexible heat-pipe loop schematic: evaporator, thermal switch, condenser">
-          <figcaption>Flexible heat-pipe loop (FHPL) — evaporator on the electronics box, thermal switch,
-            and condenser at the radiator.</figcaption>
-        </figure>
+        <p class="doclinks">
+          <a href="assets/files/Alex_Contreras_LunarRover_CDR_Slides.pdf" target="_blank" rel="noopener">▶ My CDR slides (29 slides)</a> ·
+          Full package:
+          <a href="assets/files/lunar-rover-Proposal.pdf" target="_blank" rel="noopener">Proposal</a> ·
+          <a href="assets/files/lunar-rover-SRR.pdf" target="_blank" rel="noopener">SRR</a> ·
+          <a href="assets/files/lunar-rover-PDR.pdf" target="_blank" rel="noopener">PDR</a> ·
+          <a href="assets/files/lunar-rover-CDR.pdf" target="_blank" rel="noopener">CDR</a> ·
+          <a href="assets/files/lunar-rover-SOW.pdf" target="_blank" rel="noopener">SOW</a> ·
+          <a href="assets/files/lunar-rover-IandT.pdf" target="_blank" rel="noopener">I&amp;T</a>
+        </p>
       </div>
-
-      <p class="doclinks">
-        <a href="assets/files/Alex_Contreras_LunarRover_CDR_Slides.pdf" target="_blank" rel="noopener">▶ My CDR slides — Thermal + Team Lead (29 slides)</a><br>
-        Full team review package:
-        <a href="assets/files/lunar-rover-Proposal.pdf" target="_blank" rel="noopener">Proposal</a> ·
-        <a href="assets/files/lunar-rover-SRR.pdf" target="_blank" rel="noopener">SRR</a> ·
-        <a href="assets/files/lunar-rover-PDR.pdf" target="_blank" rel="noopener">PDR</a> ·
-        <a href="assets/files/lunar-rover-CDR.pdf" target="_blank" rel="noopener">CDR</a> ·
-        <a href="assets/files/lunar-rover-SOW.pdf" target="_blank" rel="noopener">SOW</a> ·
-        <a href="assets/files/lunar-rover-IandT.pdf" target="_blank" rel="noopener">I&amp;T</a>
-      </p>
     </div>
 
-    <!-- ============== Shock modeling ============== -->
-    <div class="project">
-      <div class="meta">Dec 2025 · UC Irvine</div>
-      <h2>Thermochemical Nonequilibrium Shock Modeling</h2>
-      <div class="role">Solo project · MATLAB / Python</div>
-      <p>
-        I built a 1-D nitrogen shock-layer model using Rankine–Hugoniot jump conditions and a
-        two-temperature N₂/N formulation to capture thermochemical nonequilibrium behind a strong
-        shock. A coupled ODE solver marches species concentrations, velocity, translational
-        temperature, and vibrational temperature through the relaxation zone until the flow returns
-        to equilibrium.
-      </p>
+    <!-- Shock modeling -->
+    <div class="pcard">
+      <img class="pcard-hero" src="assets/img/shock-relaxation.jpg" alt="Post-shock relaxation plots" style="max-height:520px;object-fit:contain">
+      <div class="pcard-body">
+        <div class="meta">Dec 2025 · UC Irvine</div>
+        <h2>Thermochemical Nonequilibrium Shock Modeling</h2>
+        <div class="role">Solo project · MATLAB / Python</div>
+        <p>
+          Built a 1-D nitrogen shock-layer model using Rankine–Hugoniot jump conditions and a
+          two-temperature N₂/N formulation to capture thermochemical nonequilibrium behind a strong shock.
+        </p>
+        <ul class="wins">
+          <li>Coupled <b>ODE solver</b> marching species, velocity, and translational + vibrational temperatures</li>
+          <li>Captured post-shock relaxation until the flow returns to equilibrium</li>
+          <li>Post-processed results into engineering plots and energy-mode population distributions</li>
+        </ul>
+        <div class="toolrow">
+          <span class="label">Tools</span>
+          <span class="tag">Python</span><span class="tag">MATLAB</span><span class="tag">ODE solvers</span><span class="tag">Non-equilibrium</span>
+        </div>
 
-      <figure class="figure">
-        <img src="assets/img/shock-relaxation.jpg" alt="Post-shock relaxation plots: pressure, density, temperatures, species mass fractions vs distance">
-        <figcaption>Post-shock relaxation over the first 0.1 m — pressure and density rise while the
-          translational temperature T and vibrational temperature Tᵥ converge, and N₂ dissociates into N.</figcaption>
-      </figure>
+        <div class="support">
+          <figure class="figure">
+            <img src="assets/img/shock-energy-modes.jpg" alt="Rotational, vibrational, and electronic energy-mode distributions">
+            <figcaption>Energy-mode population distributions (rotational, vibrational, electronic) through the shock layer.</figcaption>
+          </figure>
+        </div>
 
-      <figure class="figure">
-        <img src="assets/img/shock-energy-modes.jpg" alt="Rotational, vibrational, and electronic energy-mode population distributions">
-        <figcaption>Energy-mode population distributions (rotational, vibrational, electronic) at stations
-          through the shock layer — showing the departure from, and relaxation toward, equilibrium.</figcaption>
-      </figure>
-
-      <p class="doclinks">
-        <a href="assets/files/shock-modeling-report.pdf" target="_blank" rel="noopener">Read full report (PDF)</a> ·
-        Source:
-        <a href="assets/files/shock-code/main.py" target="_blank" rel="noopener">main.py</a> ·
-        <a href="assets/files/shock-code/rh_jump.py" target="_blank" rel="noopener">rh_jump.py</a> ·
-        <a href="assets/files/shock-code/simulate.py" target="_blank" rel="noopener">simulate.py</a>
-      </p>
+        <p class="doclinks">
+          <a href="assets/files/shock-modeling-report.pdf" target="_blank" rel="noopener">Read full report (PDF)</a> ·
+          Source:
+          <a href="assets/files/shock-code/main.py" target="_blank" rel="noopener">main.py</a> ·
+          <a href="assets/files/shock-code/rh_jump.py" target="_blank" rel="noopener">rh_jump.py</a> ·
+          <a href="assets/files/shock-code/simulate.py" target="_blank" rel="noopener">simulate.py</a>
+        </p>
+      </div>
     </div>
 
   </div>
