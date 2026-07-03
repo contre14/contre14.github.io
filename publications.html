@@ -45,19 +45,29 @@
           S. Wei, B. Brettmann &amp; J. Kalman
         </div>
         <p>
-          Investigates how polybutadiene binder structure governs the dynamic wetting and spreading
-          of droplets impacting ammonium perchlorate — key to expanding the design space for
-          binder-jetting additive manufacturing of composite propellants. Spreading scales with
-          t<sup>1/2</sup> in the inertia-dominated regime before transitioning to a viscous regime;
-          branched polymer variants spread up to 25% more by area than linear variants.
+          Ammonium perchlorate composite propellants power most missiles and launch vehicles. This
+          paper studies how to 3D-print them better: how polybutadiene binder structure governs the
+          dynamic wetting of droplets impacting ammonium perchlorate, the key unknown for binder-jetting
+          additive manufacturing of propellants. Spreading scales with t<sup>1/2</sup> right after
+          impact (inertia-dominated) before a viscous regime; the branched polymer spread up to 25%
+          more by area than the linear one.
+        </p>
+
+        <p style="font-weight:600;color:var(--ink);margin-top:18px">My contribution — the image-processing pipeline</p>
+        <p>
+          I built the MATLAB pipeline that turned <b>15,000 fps</b> high-speed video into the
+          quantitative data behind the paper's findings — thousands of sub-millimeter frames per test,
+          impossible to measure by hand.
         </p>
         <ul class="wins">
-          <li>My contribution: <b>high-speed experimental data reduction and analysis in MATLAB</b></li>
-          <li>Reduced the droplet-impact image sequences (above) to measure spreading through impact and maximum spread</li>
+          <li>Freefall analysis via circle-finding to extract initial droplet diameter <b>D₀</b> and impact velocity <b>U₀</b></li>
+          <li>Per-frame spreading: spread diameter, dynamic contact angle (cubic edge fit), and contact-line velocity (finite differencing)</li>
+          <li>Interactive pixel→mm calibration and substrate contact-line detection, then automated cropping across the sequence</li>
+          <li>Normalized to dimensionless spread ratio <b>D/D₀</b> vs <b>t* = t·U₀/D₀</b> and exported the datasets behind the figures</li>
         </ul>
         <div class="toolrow">
-          <span class="label">Tools</span>
-          <span class="tag">MATLAB</span><span class="tag">High-speed imaging</span><span class="tag">Data analysis</span>
+          <span class="label">Techniques</span>
+          <span class="tag">MATLAB</span><span class="tag">Image Segmentation</span><span class="tag">Sub-pixel Edge Detection</span><span class="tag">Morphological Filtering</span><span class="tag">Finite-Difference Methods</span><span class="tag">Dimensional Analysis</span>
         </div>
         <p class="doclinks">
           <a href="https://doi.org/10.1038/s44334-024-00007-8" target="_blank" rel="noopener">Read on publisher (DOI)</a> ·
