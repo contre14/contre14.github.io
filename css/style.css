@@ -119,6 +119,23 @@ p{color:var(--muted)}
   color:var(--muted);font-size:.78rem;padding:3px 10px;border-radius:999px;margin:4px 4px 0 0;
 }
 
+/* ---------- Work figures (inline project/research visuals) ---------- */
+.project{padding:40px 0;border-bottom:1px solid var(--line)}
+.project:first-of-type{padding-top:24px}
+.project:last-child{border-bottom:0}
+.project .meta{font-size:.85rem;color:var(--accent);font-weight:600;margin-bottom:6px}
+.project h2{margin-bottom:4px}
+.project .role{font-weight:600;color:var(--ink);margin-bottom:12px}
+.project p{max-width:760px}
+.figure{margin:22px 0}
+.figure img{border:1px solid var(--line);border-radius:10px;background:#fff;width:100%}
+.figure figcaption{font-size:.85rem;color:var(--muted);margin-top:8px}
+.figure-grid{display:grid;gap:22px;grid-template-columns:repeat(2,1fr);margin:22px 0}
+.figure-grid .figure{margin:0}
+.doclinks{font-size:.9rem;color:var(--muted);margin-top:18px}
+.poster-link img{max-width:520px;border:1px solid var(--line);border-radius:10px}
+@media(max-width:760px){.figure-grid{grid-template-columns:1fr}}
+
 /* ---------- Timeline (experience entries) ---------- */
 .entry{
   border-left:3px solid var(--line);padding:0 0 32px 24px;position:relative;
