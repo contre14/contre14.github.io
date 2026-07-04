@@ -154,6 +154,9 @@ p{color:var(--muted)}
 .toolrow{margin:18px 0 4px}
 .toolrow .label{font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-weight:600;margin-right:6px}
 .support{margin-top:22px}
+.subhead{font-weight:700;color:var(--ink);font-size:1.08rem;margin-top:26px;margin-bottom:4px;padding-top:22px;border-top:1px solid var(--line)}
+.subhead-eyebrow{display:block;font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:3px}
+.subhead-note{font-weight:400;color:var(--muted);font-size:.95rem}
 
 /* ---------- Timeline (experience entries) ---------- */
 .entry{
