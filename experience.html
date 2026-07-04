@@ -338,6 +338,17 @@
     <p style="margin-top:10px">© <span id="yr"></span> Alexander Contreras · Irvine, CA</p>
   </div>
 </footer>
-<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script>
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  // Reliably scroll to the target section on load (nav dropdown / direct #hash links),
+  // after images settle so the position is correct.
+  function scrollToHash(){
+    if(location.hash){
+      var el=document.querySelector(location.hash);
+      if(el) el.scrollIntoView();
+    }
+  }
+  window.addEventListener('load', function(){ setTimeout(scrollToHash, 60); });
+</script>
 </body>
 </html>
