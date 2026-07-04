@@ -45,15 +45,17 @@
         <h2>Lunar Rover — Thermal Control System</h2>
         <div class="role">Project Manager &amp; Thermal Systems Lead · 8-person team</div>
         <p>
-          Led an 8-person team through a full design-review lifecycle (Proposal → SRR → PDR → CDR)
-          for a rover built to survive permanently-shadowed crater conditions. I owned the
-          thermal-control subsystem end to end.
+          Our rover had to operate inside a permanently-shadowed lunar crater — no sunlight for warmth,
+          surface temperatures from −205 °C to 100 °C, and avionics that had to stay inside a survivable
+          band for the whole mission. I led the thermal design that kept them there, and managed the
+          8-person team through all four design reviews.
         </p>
+        <p style="font-weight:600;color:var(--ink);margin-top:16px">How I approached it</p>
         <ul class="wins">
-          <li>Designed the radiator system in <b>SolidWorks</b> — ~22 ft² rejection area, ~59% lower heat-flux density</li>
-          <li>Architected an RHU + heat-pipe loop (FHPL) keeping avionics alive across <b>−205 °C to 100 °C</b></li>
-          <li>Ran mass/power/cost/integration trade studies that cut estimated project cost <b>~35%</b></li>
-          <li>Built the thermal-vacuum test plan and led the 8-person team to CDR</li>
+          <li>With no sun, the problem flips from <em>collecting</em> heat to <em>managing</em> it — I built the design around a radioisotope heater unit (RHU) as a steady source and sized everything to reject the excess</li>
+          <li>Designed the radiator panels in <b>SolidWorks</b>, iterating the geometry to ~22 ft² so heat-flux density dropped <b>~59%</b> — the margin needed to hold the survival band</li>
+          <li>A flexible heat-pipe loop (FHPL) with a thermal switch moves waste heat from the electronics box to the radiators only when needed, so the box doesn't overcool in the cold case</li>
+          <li>Wrote the thermal-balance / vacuum test plan to prove it out, and used mass/power/cost trade studies to steer the design — which also cut estimated project cost <b>~35%</b></li>
         </ul>
         <div class="toolrow">
           <span class="label">Tools</span>
@@ -94,13 +96,16 @@
         <h2>Thermochemical Nonequilibrium Shock Modeling</h2>
         <div class="role">Solo project · MATLAB / Python</div>
         <p>
-          Built a 1-D nitrogen shock-layer model using Rankine–Hugoniot jump conditions and a
-          two-temperature N₂/N formulation to capture thermochemical nonequilibrium behind a strong shock.
+          Behind a strong shock — a hypersonic forebody, or the high-enthalpy flow in a nozzle — gas heats
+          so fast that its energy modes fall out of step: the molecules are translating hot before their
+          vibrational energy catches up. A single-temperature model can't see that gap. I built a 1-D
+          nitrogen model that tracks two temperatures separately so it can.
         </p>
+        <p style="font-weight:600;color:var(--ink);margin-top:16px">How it works</p>
         <ul class="wins">
-          <li>Coupled <b>ODE solver</b> marching species, velocity, and translational + vibrational temperatures</li>
-          <li>Captured post-shock relaxation until the flow returns to equilibrium</li>
-          <li>Post-processed results into engineering plots and energy-mode population distributions</li>
+          <li>Rankine–Hugoniot jump conditions set the state across the shock; a coupled <b>ODE solver</b> then marches species, velocity, and the translational and vibrational temperatures downstream</li>
+          <li>The two temperatures relax toward each other over distance until the flow re-equilibrates — the gap between them is the nonequilibrium I was chasing</li>
+          <li>Post-processed into engineering plots and energy-mode (rotational / vibrational / electronic) population distributions to sanity-check the physics</li>
         </ul>
         <div class="toolrow">
           <span class="label">Tools</span>
