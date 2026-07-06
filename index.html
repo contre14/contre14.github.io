@@ -3,186 +3,153 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alexander Contreras — Aerospace Engineer</title>
-<meta name="description" content="Alexander Contreras — M.S. Aerospace Engineering (UC Irvine), fluid dynamics & propulsion. Hardware design, thermal-fluid modeling, and test. U.S. citizen seeking Fall 2026 propulsion internships.">
+<title>Home · Alexander Contreras</title>
+<meta name="description" content="Alexander Contreras — Aerospace Engineer, Fluid Dynamics & Propulsion. Research, projects, and publications.">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<header class="site-header">
-  <nav class="nav">
-    <a href="index.html" class="brand">Alexander Contreras</a>
-    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
-    <ul class="nav-links" id="navlinks">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="index.html#about">About</a></li>
-      <li class="dropdown">
-        <a href="experience.html">Experience</a>
-        <div class="dropdown-menu">
-          <a href="experience.html#research">Research</a>
-          <a href="experience.html#projects">Projects</a>
-          <a href="experience.html#publications">Publications</a>
-        </div>
-      </li>
-      <li><a href="awards.html">Awards</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="index.html">ALEXANDER <span>CONTRERAS</span></a>
+    <nav>
+      <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('nv').classList.toggle('open')">&#9776;</button>
+      <ul id="nv">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="honors.html">Honors &amp; Programs</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
+<main><div class="wrap">
 
 <section class="hero">
-  <div class="container hero-grid">
-    <div>
-    <p class="eyebrow">Aerospace Engineer · Propulsion · Thermal-Fluids · Test</p>
+  <img class="photo" src="assets/headshot.png" alt="Alexander Contreras">
+  <div>
     <h1>Alexander Contreras</h1>
-    <p class="lead">
-      Aerospace M.S. student at UC Irvine focused on fluid dynamics, propulsion, and thermal-fluids.
-      This portfolio highlights the projects that have shaped my engineering path, from thermal design
-      and flow modeling to hands-on testing and data analysis.
-    </p>
-    <div class="hero-cta">
-      <a class="btn" href="experience.html">See my work</a>
-      <a class="btn btn--ghost" href="assets/files/Alex_Contreras_Resume.pdf">Resume (PDF)</a>
-    </div>
-    <div style="margin-top:20px">
-      <a class="contact-pill" href="mailto:contre14@uci.edu">contre14@uci.edu</a>
-      <a class="contact-pill" href="tel:+19495403239">(949) 540-3239</a>
-      <a class="contact-pill" href="https://www.linkedin.com/in/alex-contreras-ac" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
-    </div>
-    <div class="hero-visual">
-      <img src="assets/headshot.png" alt="Alexander Contreras">
+    <span class="tag">Aerospace Engineer · Propulsion · Thermal-Fluids · Test</span>
+    <p>Aerospace M.S. student at UC Irvine focused on fluid dynamics, propulsion, and thermal-fluids. This portfolio highlights the projects that have shaped my engineering path, from thermal design and flow modeling to hands-on testing and data analysis.</p>
+    <div class="contactline">
+      <span><a href="mailto:contre14@uci.edu">contre14@uci.edu</a></span>
+      <span><a href="tel:+19495403239">(949) 540-3239</a></span>
+      <span><a href="https://www.linkedin.com/in/alex-contreras-ac" target="_blank" rel="noopener">linkedin.com/in/alex-contreras-ac</a></span>
+      <span>Irvine, CA · U.S. citizen (ITAR-eligible)</span>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <h2 class="center">Highlights</h2>
-    <p class="center muted" style="margin-bottom:36px">Real hardware, modeling, and test work — click through for the actual designs, code, and results.</p>
-    <div class="grid grid-3">
-      <a class="card" href="experience.html#projects" style="color:inherit">
-        <div class="meta">HARDWARE · TEST · THERMAL</div>
-        <h3>Lunar Rover — Thermal Design &amp; Project Lead</h3>
-        <p>Designed the rover's thermal-control system, including CAD radiator layout, thermal test planning, and subsystem coordination through CDR.</p>
-      </a>
-      <a class="card" href="experience.html#projects" style="color:inherit">
-        <div class="meta">MODELING · PYTHON/MATLAB</div>
-        <h3>Thermochemical Shock Modeling</h3>
-        <p>Built a 1-D nitrogen shock-layer model from first principles using jump conditions, two-temperature relaxation, and coupled ODE solvers.</p>
-      </a>
-      <a class="card" href="experience.html#publications" style="color:inherit">
-        <div class="meta">TESTING · DATA REDUCTION</div>
-        <h3>Solid Propulsion Binder Research</h3>
-        <p>Ran high-speed droplet/wetting tests for solid-rocket binder research and automated MATLAB data reduction for 100+ test videos. Co-author, npj Advanced Manufacturing.</p>
-      </a>
+<div class="banner">
+  <span class="b-ico">&#128196;</span>
+  <span><b>Published co-author</b> — "Polybutadiene structural effects on dynamic wetting," <i>npj Advanced Manufacturing</i> (2024). <a href="research.html">Read more &#8594;</a></span>
+</div>
+
+<!-- Highlights -->
+<section class="sec">
+  <p class="eyebrow">Highlights</p>
+  <p class="sec-intro">Real hardware, modeling, and test work — click through for the actual designs, code, and results.</p>
+  <div class="tiles">
+    <a class="tile" href="projects.html">
+      <p class="t-meta">Hardware · Test · Thermal</p>
+      <h3>Lunar Rover — Thermal Design &amp; Project Lead</h3>
+      <p>Designed the rover's thermal-control system, including CAD radiator layout, thermal test planning, and subsystem coordination through CDR.</p>
+      <span class="arw">View project &#8594;</span>
+    </a>
+    <a class="tile" href="projects.html">
+      <p class="t-meta">Modeling · Python/MATLAB</p>
+      <h3>Thermochemical Shock Modeling</h3>
+      <p>Built a 1-D nitrogen shock-layer model from first principles using jump conditions, two-temperature relaxation, and coupled ODE solvers.</p>
+      <span class="arw">View project &#8594;</span>
+    </a>
+    <a class="tile" href="research.html">
+      <p class="t-meta">Testing · Data Reduction</p>
+      <h3>Solid Propulsion Binder Research</h3>
+      <p>Ran high-speed droplet/wetting tests for solid-rocket binder research and automated MATLAB data reduction for 100+ test videos. Co-author, npj Advanced Manufacturing.</p>
+      <span class="arw">View research &#8594;</span>
+    </a>
+  </div>
+</section>
+
+<!-- How I fit -->
+<section class="sec">
+  <p class="eyebrow">How I fit a propulsion team</p>
+  <p class="sec-intro">What these roles ask for — and where I've already done it.</p>
+  <div class="grid2">
+    <div class="mini">
+      <p class="m-cap">Thermal &amp; Fluid Systems</p>
+      <p class="m-meta" style="margin-top:0">Thermal-control design, radiator sizing, heat-transfer analysis, and high-temperature post-shock flow modeling.</p>
+    </div>
+    <div class="mini">
+      <p class="m-cap">Hardware Testing</p>
+      <p class="m-meta" style="margin-top:0">Thermal-balance/vacuum test planning, standardized lab procedures, high-speed test data reduction, and engineering documentation.</p>
+    </div>
+    <div class="mini">
+      <p class="m-cap">Integration &amp; Teamwork</p>
+      <p class="m-meta" style="margin-top:0">Subsystem requirements, interface tracking, design reviews, V&amp;V planning, and 7-person team leadership from proposal through CDR.</p>
+    </div>
+    <div class="mini">
+      <p class="m-cap">First-Principles Modeling</p>
+      <p class="m-meta" style="margin-top:0">Rankine–Hugoniot jump conditions, two-temperature shock relaxation, coupled ODE solvers, and MATLAB/Python post-processing workflows.</p>
     </div>
   </div>
 </section>
 
-<section class="section section--soft">
-  <div class="container">
-    <h2 class="center">How I fit a propulsion team</h2>
-    <p class="center muted" style="margin-bottom:36px">What these roles ask for — and where I've already done it.</p>
-    <div class="grid grid-2">
-      <div class="card">
-        <div class="meta">THERMAL &amp; FLUID SYSTEMS</div>
-        <p style="color:var(--ink);margin:0">Thermal-control design, radiator sizing, heat-transfer analysis, and high-temperature post-shock flow modeling.</p>
-      </div>
-      <div class="card">
-        <div class="meta">HARDWARE TESTING</div>
-        <p style="color:var(--ink);margin:0">Thermal-balance/vacuum test planning, standardized lab procedures, high-speed test data reduction, and engineering documentation.</p>
-      </div>
-      <div class="card">
-        <div class="meta">INTEGRATION &amp; TEAMWORK</div>
-        <p style="color:var(--ink);margin:0">Subsystem requirements, interface tracking, design reviews, V&amp;V planning, and 7-person team leadership from proposal through CDR.</p>
-      </div>
-      <div class="card">
-        <div class="meta">FIRST-PRINCIPLES MODELING</div>
-        <p style="color:var(--ink);margin:0">Rankine–Hugoniot jump conditions, two-temperature shock relaxation, coupled ODE solvers, and MATLAB/Python post-processing workflows.</p>
-      </div>
+<!-- Skills -->
+<section class="sec">
+  <p class="eyebrow">Skills &amp; tools</p>
+  <p class="sec-intro">Software and engineering competencies I use day to day.</p>
+  <div class="skillgroup">
+    <p class="s-lab">Software</p>
+    <div class="tags">
+      <span class="tag">SolidWorks (CAD)</span><span class="tag">MATLAB</span><span class="tag">Python</span><span class="tag">Linux</span><span class="tag">Excel</span>
+    </div>
+  </div>
+  <div class="skillgroup">
+    <p class="s-lab">Engineering</p>
+    <div class="tags">
+      <span class="tag">Mechanical Design</span><span class="tag">Heat Transfer</span><span class="tag">Fluid / Thermal Analysis</span><span class="tag">Integration &amp; Testing</span><span class="tag">Quality Control</span><span class="tag">System V&amp;V</span>
     </div>
   </div>
 </section>
 
-<section class="section" id="about" style="scroll-margin-top:96px">
-  <div class="container">
-    <h2 class="center">Skills &amp; tools</h2>
-    <p class="center muted" style="margin-bottom:24px">Software and engineering competencies I use day to day.</p>
-    <div style="max-width:760px;margin:0 auto">
-      <p style="font-weight:600;color:var(--ink);margin-bottom:6px">Software</p>
-      <div style="margin-bottom:18px">
-        <span class="tag">SolidWorks (CAD)</span>
-        <span class="tag">MATLAB</span>
-        <span class="tag">Python</span>
-        <span class="tag">Linux</span>
-        <span class="tag">Excel</span>
-      </div>
-      <p style="font-weight:600;color:var(--ink);margin-bottom:6px">Engineering</p>
-      <div>
-        <span class="tag">Mechanical Design</span>
-        <span class="tag">Heat Transfer</span>
-        <span class="tag">Fluid / Thermal Analysis</span>
-        <span class="tag">Integration &amp; Testing</span>
-        <span class="tag">Quality Control</span>
-        <span class="tag">System V&amp;V</span>
-      </div>
+<!-- Education -->
+<section class="sec">
+  <p class="eyebrow">Education</p>
+  <div class="grid2">
+    <div class="mini">
+      <h3>University of California, Irvine</h3>
+      <p class="m-sub">Irvine, CA · Expected December 2026</p>
+      <p class="m-meta">M.S. Aerospace Engineering — Fluid Dynamics &amp; Propulsion · GPA 3.47. Graduate research in high-temperature flow modeling and propulsion-relevant post-shock analysis.</p>
+    </div>
+    <div class="mini">
+      <h3>California State University, Long Beach</h3>
+      <p class="m-sub">Long Beach, CA · May 2024</p>
+      <p class="m-meta">B.S. Aerospace Engineering · GPA 3.56. NSF LSAMP researcher, MATLAB Ambassador, and lunar-rover senior design project manager.</p>
     </div>
   </div>
 </section>
 
-<section class="section section--soft">
-  <div class="container">
-    <h2 class="center">Education</h2>
-    <div style="margin:24px auto 0;max-width:760px">
-      <div class="entry">
-        <div class="when">Expected December 2026</div>
-        <h3>M.S., Aerospace Engineering — Fluid Dynamics &amp; Propulsion</h3>
-        <div class="where">University of California, Irvine</div>
-        <p>GPA 3.47. Graduate research in high-temperature flow modeling and propulsion-relevant post-shock analysis.</p>
-      </div>
-      <div class="entry">
-        <div class="when">May 2024</div>
-        <h3>B.S., Aerospace Engineering</h3>
-        <div class="where">California State University, Long Beach</div>
-        <p>GPA 3.56. NSF LSAMP researcher, MATLAB Ambassador, and lunar-rover senior design project manager.</p>
-      </div>
-    </div>
+<!-- Get in touch -->
+<section class="sec" id="contact">
+  <p class="eyebrow">Get in touch</p>
+  <p class="sec-intro">Open to Fall 2026 propulsion / thermal-fluids internships. U.S. citizen (ITAR-eligible).</p>
+  <div class="btnrow">
+    <a class="btn" href="mailto:contre14@uci.edu">Email me</a>
+    <a class="btn btn--ghost" href="assets/files/Alex_Contreras_Resume.pdf" target="_blank" rel="noopener">Download resume</a>
+  </div>
+  <div class="contactline" style="margin-top:16px">
+    <span><a href="mailto:contre14@uci.edu">contre14@uci.edu</a></span>
+    <span><a href="tel:+19495403239">(949) 540-3239</a></span>
+    <span><a href="https://www.linkedin.com/in/alex-contreras-ac" target="_blank" rel="noopener">LinkedIn</a></span>
   </div>
 </section>
 
-<section class="section" id="contact" style="scroll-margin-top:96px">
-  <div class="container center">
-    <h2>Get in touch</h2>
-    <p class="lead muted" style="margin:10px auto 0">
-      Open to Fall 2026 propulsion / thermal-fluids internships. U.S. citizen (ITAR-eligible).
-    </p>
-    <div class="hero-cta" style="justify-content:center;margin-top:26px">
-      <a class="btn" href="mailto:contre14@uci.edu">Email me</a>
-      <a class="btn btn--ghost" href="assets/files/Alex_Contreras_Resume.pdf">Download resume</a>
-    </div>
-    <div style="margin-top:24px">
-      <a class="contact-pill" href="mailto:contre14@uci.edu">contre14@uci.edu</a>
-      <a class="contact-pill" href="tel:+19495403239">(949) 540-3239</a>
-      <a class="contact-pill" href="https://www.linkedin.com/in/alex-contreras-ac" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="container">
-    <div>
-      <a href="mailto:contre14@uci.edu">Email</a>·
-      <a href="https://www.linkedin.com/in/alex-contreras-ac" target="_blank" rel="noopener">LinkedIn</a>·
-      <a href="assets/files/Alex_Contreras_Resume.pdf">Resume</a>
-    </div>
-    <p style="margin-top:10px">© <span id="yr"></span> Alexander Contreras · Irvine, CA</p>
-  </div>
-</footer>
-<script>
-  document.getElementById('yr').textContent=new Date().getFullYear();
-  function scrollToHash(){ if(location.hash){ var el=document.querySelector(location.hash); if(el) el.scrollIntoView(); } }
-  window.addEventListener('load', function(){ setTimeout(scrollToHash, 60); });
-</script>
+</div></main>
+<footer class="site"><div class="wrap">
+  <span>&copy; <span id="yr"></span> Alexander Contreras · Aerospace Engineer</span>
+  <span><a href="mailto:contre14@uci.edu">contre14@uci.edu</a> · <a href="https://www.linkedin.com/in/alex-contreras-ac" target="_blank" rel="noopener">LinkedIn</a></span>
+</div></footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>
 </html>

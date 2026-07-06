@@ -2,12 +2,99 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="0; url=experience.html#projects">
-<link rel="canonical" href="experience.html">
-<title>Projects — Alexander Contreras</title>
-<script>location.replace("experience.html#projects");</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects · Alexander Contreras</title>
+<meta name="description" content="Alexander Contreras — engineering projects in propulsion modeling and spacecraft thermal systems.">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<p>This page has moved to <a href="experience.html#projects">Experience → Projects</a>.</p>
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="index.html">ALEXANDER <span>CONTRERAS</span></a>
+    <nav>
+      <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('nv').classList.toggle('open')">&#9776;</button>
+      <ul id="nv">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="honors.html">Honors &amp; Programs</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main><div class="wrap">
+
+<p class="eyebrow">Projects</p>
+<h1 class="phead">Projects</h1>
+<p class="pintro">Hands-on engineering — the actual designs, models, and results, from a full-lifecycle spacecraft thermal system to computational propulsion modeling.</p>
+
+<!-- Lunar Rover -->
+<div class="entry">
+  <div class="e-top"><h2>Lunar Rover — Thermal Control System</h2><span class="e-date">Aug 2023 – May 2024</span></div>
+  <p class="e-role">Project Manager &amp; Thermal Systems Lead · 7-person team</p>
+  <p class="e-affil">California State University, Long Beach — Senior Design (Team Auger)</p>
+  <div class="e-body">Our rover had to operate inside a permanently-shadowed lunar crater — no sunlight for warmth, surface temperatures from −205 °C to 100 °C, and avionics that had to stay inside a survivable band for the whole mission. I led the thermal design that kept them there, and managed the 7-person team through all four design reviews.</div>
+  <ul>
+    <li>With no sun, the problem flips from <em>collecting</em> heat to <em>managing</em> it — I built the design around a radioisotope heater unit (RHU) as a steady source and sized everything to reject the excess.</li>
+    <li>Designed the radiator panels in SolidWorks, iterating the geometry to ~22 ft² so heat-flux density dropped ~59% — the margin needed to hold the survival band.</li>
+    <li>A flexible heat-pipe loop (FHPL) with a thermal switch moves waste heat from the electronics box to the radiators only when needed, so the box doesn't overcool in the cold case.</li>
+    <li>Wrote the thermal-balance / vacuum test plan, and used mass/power/cost trade studies to steer the design — which also cut estimated project cost ~35%.</li>
+  </ul>
+  <div class="tags"><span class="tag">SolidWorks</span><span class="tag">Thermal Design</span><span class="tag">Heat Transfer</span><span class="tag">Systems Engineering</span><span class="tag">V&amp;V</span><span class="tag">Project Management</span></div>
+
+  <figure class="figure">
+    <a href="assets/img/rover-external.jpg" target="_blank" rel="noopener"><img src="assets/img/rover-external.jpg" alt="SolidWorks external view of the lunar rover with labeled subsystems"></a>
+    <figcaption>Integrated rover design (SolidWorks) with labeled subsystems. Click to enlarge.</figcaption>
+  </figure>
+  <div class="figrow">
+    <figure class="figure"><a href="assets/img/radiator-design.jpg" target="_blank" rel="noopener"><img src="assets/img/radiator-design.jpg" alt="SolidWorks radiator panel design with dimensions"></a><figcaption>Radiator panel design, sized for the required heat-rejection area.</figcaption></figure>
+    <figure class="figure"><a href="assets/img/thermal-design.jpg" target="_blank" rel="noopener"><img src="assets/img/thermal-design.jpg" alt="Thermal-control layout on the rover"></a><figcaption>Thermal layout — RHU, main + back radiators, and the heat-pipe loop.</figcaption></figure>
+  </div>
+
+  <p class="sub-h">Design-review documentation</p>
+  <div class="doc-grid">
+    <div class="doc-mini"><div class="dm-t">▶ My CDR slides (29, thermal + team lead)</div><div class="dm-l"><a href="assets/files/Alex_Contreras_LunarRover_CDR_Slides.pdf" target="_blank" rel="noopener">Open PDF &#8599;</a></div></div>
+    <div class="doc-mini"><div class="dm-t">Critical Design Review (CDR)</div><div class="dm-l"><a href="assets/files/lunar-rover-CDR.pdf" target="_blank" rel="noopener">Open PDF &#8599;</a></div></div>
+    <div class="doc-mini"><div class="dm-t">Preliminary Design Review (PDR)</div><div class="dm-l"><a href="assets/files/lunar-rover-PDR.pdf" target="_blank" rel="noopener">Open PDF &#8599;</a></div></div>
+    <div class="doc-mini"><div class="dm-t">Integration &amp; Test (I&amp;T)</div><div class="dm-l"><a href="assets/files/lunar-rover-IandT.pdf" target="_blank" rel="noopener">Open PDF &#8599;</a></div></div>
+    <div class="doc-mini"><div class="dm-t">Proposal · SRR</div><div class="dm-l"><a href="assets/files/lunar-rover-Proposal.pdf" target="_blank" rel="noopener">Proposal &#8599;</a> &nbsp;·&nbsp; <a href="assets/files/lunar-rover-SRR.pdf" target="_blank" rel="noopener">SRR &#8599;</a></div></div>
+    <div class="doc-mini"><div class="dm-t">Statement of Work (SOW)</div><div class="dm-l"><a href="assets/files/lunar-rover-SOW.pdf" target="_blank" rel="noopener">Open PDF &#8599;</a></div></div>
+  </div>
+</div>
+
+<!-- Shock modeling -->
+<div class="entry">
+  <div class="e-top"><h2>Thermochemical Nonequilibrium Shock Modeling</h2><span class="e-date">Dec 2025</span></div>
+  <p class="e-role">Independent Project · N₂/N Two-Temperature Formulation</p>
+  <p class="e-affil">University of California, Irvine</p>
+  <div class="e-body">Behind a strong shock — a hypersonic forebody, or the high-enthalpy flow in a nozzle — gas heats so fast that its energy modes fall out of step: the molecules are translating hot before their vibrational energy catches up. A single-temperature model can't see that gap. I built a 1-D nitrogen model that tracks two temperatures separately so it can.</div>
+  <ul>
+    <li>Rankine–Hugoniot jump conditions set the state across the shock; a coupled ODE solver then marches species, velocity, and the translational and vibrational temperatures downstream.</li>
+    <li>The two temperatures relax toward each other over distance until the flow re-equilibrates — the gap between them is the nonequilibrium I was chasing.</li>
+    <li>Post-processed into engineering plots and energy-mode (rotational / vibrational / electronic) population distributions to sanity-check the physics.</li>
+  </ul>
+  <div class="tags"><span class="tag">Python</span><span class="tag">MATLAB</span><span class="tag">ODE solvers</span><span class="tag">Hypersonics</span><span class="tag">Non-equilibrium</span></div>
+
+  <div class="figrow">
+    <figure class="figure"><a href="assets/img/shock-relaxation.jpg" target="_blank" rel="noopener"><img src="assets/img/shock-relaxation.jpg" alt="Post-shock relaxation plots"></a><figcaption>Post-shock relaxation — pressure, density, T/Tᵥ, and species fractions vs distance.</figcaption></figure>
+    <figure class="figure"><a href="assets/img/shock-energy-modes.jpg" target="_blank" rel="noopener"><img src="assets/img/shock-energy-modes.jpg" alt="Energy-mode population distributions"></a><figcaption>Rotational, vibrational, and electronic energy-mode distributions through the layer.</figcaption></figure>
+  </div>
+  <div class="codelinks">
+    <a href="assets/files/shock-code/main.py" target="_blank" rel="noopener">main.py</a>
+    <a href="assets/files/shock-code/rh_jump.py" target="_blank" rel="noopener">rh_jump.py</a>
+    <a href="assets/files/shock-code/simulate.py" target="_blank" rel="noopener">simulate.py</a>
+  </div>
+  <div class="doc-grid">
+    <div class="doc-mini"><div class="dm-t">&#128196; Full report</div><div class="dm-l"><a href="assets/files/shock-modeling-report.pdf" target="_blank" rel="noopener">Open (PDF) &#8599;</a></div></div>
+  </div>
+</div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+  <span>&copy; <span id="yr"></span> Alexander Contreras · Aerospace Engineer</span>
+  <span><a href="mailto:contre14@uci.edu">contre14@uci.edu</a> · <a href="https://www.linkedin.com/in/alex-contreras-ac" target="_blank" rel="noopener">LinkedIn</a></span>
+</div></footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>
 </html>
