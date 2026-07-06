@@ -2,10 +2,466 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="0; url=research.html">
-<link rel="canonical" href="research.html">
-<title>Moved · Alexander Contreras</title>
-<script>location.replace("research.html");</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experience — Alexander Contreras</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body><p>This page has moved to <a href="research.html">Research</a>.</p></body>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">Alexander Contreras</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li class="dropdown">
+        <a href="experience.html" class="active">Experience</a>
+        <div class="dropdown-menu">
+          <a href="experience.html#research">Research</a>
+          <a href="experience.html#projects">Projects</a>
+          <a href="experience.html#publications">Publications</a>
+        </div>
+      </li>
+      <li><a href="awards.html">Awards</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="section" style="padding-bottom:24px">
+  <div class="container">
+    <p class="eyebrow" style="color:var(--accent);font-weight:600">EXPERIENCE</p>
+    <h1>Experience</h1>
+    <p class="lead muted" style="margin-top:10px">
+      Research, hands-on projects, and peer-reviewed work — jump to a section:
+    </p>
+  </div>
+</section>
+
+<nav class="jumpnav">
+  <div class="container">
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#publications">Publications</a>
+  </div>
+</nav>
+
+<!-- ================= RESEARCH ================= -->
+<section class="section exp-section" id="research">
+  <div class="container">
+    <h2 class="section-title">Research</h2>
+    <p class="muted" style="margin-bottom:28px">Experimental and computational research in combustion, soft matter, and high-temperature flows.</p>
+
+    <!-- UCI graduate research -->
+    <div class="pcard">
+      <div class="pcard-head">
+        <div class="headmeta">Jan 2026 – Present · UC Irvine</div>
+        <h2 class="big-title">Graduate Researcher — High-Temperature Flow Modeling</h2>
+        <div class="headline">M.S. thesis research · propulsion-relevant nonequilibrium flows</div>
+      </div>
+      <div class="pcard-body" style="border-top:1px solid var(--line)">
+        <div class="pcard-cols">
+          <div class="pcard-main">
+            <p>
+              I study nonequilibrium post-shock flows, which means running the same analysis across dozens
+              of conditions. I'm building the workflow that runs those cases and keeps the results
+              consistent, so differences between cases reflect the physics and not run-to-run noise.
+            </p>
+            <p style="font-weight:600;color:var(--ink);margin-top:16px">What I built</p>
+            <ul class="wins">
+              <li>Scripted the whole loop in <b>Python</b> on <b>Linux</b> — case generation, batch execution, output parsing — so a full parameter sweep runs unattended (<b>~60%</b> less turnaround across <b>50+</b> cases)</li>
+              <li>Tracked down the run failures that quietly corrupt sweeps and pinned the post-processing to fixed metrics, so re-runs hold <b>&lt;2%</b> variation and cross-case comparisons stay apples-to-apples</li>
+              <li>The two-temperature shock-layer model came out of this line of work</li>
+            </ul>
+          </div>
+          <aside class="pcard-side">
+            <div class="tools-wrap" style="margin-bottom:0">
+              <h4>Tools</h4>
+              <span class="tag">Python</span><span class="tag">Linux</span><span class="tag">Non-equilibrium flows</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <!-- NSF combustion → publication -->
+    <div class="pcard">
+      <div class="pcard-head">
+        <div class="headmeta">Jun 2021 – May 2024 · CSU Long Beach</div>
+        <h2 class="big-title">NSF Researcher — Space &amp; Combustion Lab</h2>
+        <div class="headline">Undergraduate Researcher · NSF CSU-LSAMP · PI: Dr. Joseph Kalman</div>
+        <div class="headline pub">Co-author · npj Advanced Manufacturing (2024)</div>
+        <div class="headline pub">Paper: Polybutadiene structural effects on dynamic wetting</div>
+      </div>
+      <a href="assets/img/wetting-highspeed.jpg" target="_blank" rel="noopener">
+        <img class="pcard-hero clickable" src="assets/img/wetting-highspeed.jpg" alt="Droplet-impact test rig and high-speed spreading sequence" style="max-height:760px;object-fit:contain">
+      </a>
+      <div class="pcard-body">
+        <div class="pcard-cols">
+          <div class="pcard-main">
+            <p>
+              I joined Dr. Kalman's Space &amp; Combustion Lab in my first year as an NSF CSU-LSAMP
+              undergraduate researcher, studying how non-Newtonian binder fluids spread under oscillatory
+              forcing. Over three years, that first-year mini-project grew into the co-authored paper above —
+              how polybutadiene binders wet ammonium perchlorate, the physics behind 3D-printing solid
+              rocket propellant. I ran the experiments and built the MATLAB pipeline behind its data.
+            </p>
+            <ul class="wins">
+              <li>Ran the benchtop droplet-impact experiments and high-speed imaging (<b>15,000 fps</b>), following standardized procedures and keeping QC records so the data actually repeated run to run</li>
+              <li>Built the <b>MATLAB</b> image-processing pipeline that turned <b>100+</b> raw videos into the quantitative spreading data behind the paper (<b>~50%</b> less processing time)</li>
+            </ul>
+            <p class="subhead">
+              <span class="subhead-eyebrow">Early project</span>
+              2022 Week of RSCA <span class="subhead-note">— where it started</span>
+            </p>
+            <p>
+              Before the paper, this was my first-year LSAMP research project — non-Newtonian binder fluids
+              under oscillatory forcing — which I presented at the 2022 Week of RSCA. It's the foundation the
+              publication grew from.
+            </p>
+          </div>
+          <aside class="pcard-side">
+            <div class="tools-wrap">
+              <h4>Tools</h4>
+              <span class="tag">MATLAB</span><span class="tag">High-speed imaging</span><span class="tag">Image Processing</span><span class="tag">Combustion</span>
+            </div>
+            <div class="links-col">
+              <h4>Links</h4>
+              <a class="btn-link" href="#publications">See Pipeline Breakdown</a>
+              <a class="btn-link" href="https://doi.org/10.1038/s44334-024-00007-8" target="_blank" rel="noopener">Read Published Paper</a>
+              <a class="btn-link" href="assets/files/dynamic-wetting-paper.pdf" target="_blank" rel="noopener">Download Paper PDF</a>
+              <a class="btn-link" href="assets/files/rsca-poster.pdf" target="_blank" rel="noopener">View RSCA Poster</a>
+            </div>
+          </aside>
+        </div>
+        <div class="support">
+          <figure class="figure">
+            <a href="assets/img/rsca-poster-full.jpg" target="_blank" rel="noopener">
+              <img src="assets/img/rsca-poster-full.jpg" alt="RSCA research poster — non-Newtonian fluids under oscillatory forcing">
+            </a>
+            <figcaption>My 2022 Week of RSCA poster (non-Newtonian fluids under oscillatory forcing). Click to enlarge.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- Berkeley -->
+    <div class="pcard">
+      <div class="pcard-head">
+        <div class="headmeta">Jun 2022 – Jul 2022 · UC Berkeley</div>
+        <h2 class="big-title">Inclusive Excellence Researcher — Structural Color</h2>
+        <div class="headline">Summer research fellow · self-assembling nanoparticles at fluid interfaces</div>
+      </div>
+      <a href="assets/img/berkeley-color.jpg" target="_blank" rel="noopener">
+        <img class="pcard-hero clickable" src="assets/img/berkeley-color.jpg" alt="SEM images of colloidal particles and the resulting structural-color swatches" style="max-height:720px;object-fit:contain">
+      </a>
+      <div class="pcard-body">
+        <div class="pcard-cols">
+          <div class="pcard-main">
+            <p>
+              Structural color is color made by geometry instead of pigment — pack tiny particles at just the
+              right spacing and they reflect a specific wavelength. My summer project was learning to control
+              that spacing by tuning the volume fraction of colloidal droplets.
+            </p>
+            <p style="font-weight:600;color:var(--ink);margin-top:16px">What I did</p>
+            <ul class="wins">
+              <li>Built <b>double-emulsion</b> setups (DI-water / ETPTA / DI-water) to self-assemble the particles into droplets</li>
+              <li>Measured droplet size and volume fraction from microscopy in <b>MATLAB</b>, and prototyped microfluidic devices in <b>SolidWorks</b> for steadier, leak-resistant flow</li>
+              <li>Presented the results to <b>50+</b> attendees at the Berkeley 2022 Summer Symposium</li>
+            </ul>
+          </div>
+          <aside class="pcard-side">
+            <div class="tools-wrap">
+              <h4>Tools</h4>
+              <span class="tag">MATLAB</span><span class="tag">SolidWorks</span><span class="tag">Microfluidics</span>
+            </div>
+            <div class="links-col">
+              <h4>Links</h4>
+              <a class="btn-link" href="assets/files/berkeley-presentation.pdf" target="_blank" rel="noopener">View Presentation</a>
+            </div>
+          </aside>
+        </div>
+        <div class="support">
+          <figure class="figure">
+            <a href="assets/img/berkeley-emulsion.jpg" target="_blank" rel="noopener">
+              <img src="assets/img/berkeley-emulsion.jpg" alt="Labeled double-emulsion microfluidic setup with inner, middle, and continuous phases">
+            </a>
+            <figcaption>Double-emulsion setup — inner phase (DI water), middle phase (ETPTA), and continuous phase. Click to enlarge.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="section section--soft exp-section" id="projects">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <p class="muted" style="margin-bottom:28px">Hands-on engineering — the actual designs, models, and results.</p>
+
+    <!-- Lunar Rover -->
+    <div class="pcard">
+      <div class="pcard-head">
+        <div class="headmeta">Aug 2023 – May 2024 · CSULB Senior Design (Team Auger)</div>
+        <h2 class="big-title">Lunar Rover — Thermal Control System</h2>
+        <div class="headline">Project Manager &amp; Thermal Systems Lead · 7-person team</div>
+      </div>
+      <a href="assets/img/rover-external.jpg" target="_blank" rel="noopener">
+        <img class="pcard-hero clickable" src="assets/img/rover-external.jpg" alt="SolidWorks external view of the lunar rover with labeled subsystems">
+      </a>
+      <div class="pcard-body">
+        <div class="support" style="margin-top:0">
+          <figure class="figure">
+            <a href="assets/img/radiator-design.jpg" target="_blank" rel="noopener">
+              <img src="assets/img/radiator-design.jpg" alt="SolidWorks radiator panel design with dimensions">
+            </a>
+            <figcaption>Radiator panel design (SolidWorks), sized for the required heat-rejection area. Click to enlarge.</figcaption>
+          </figure>
+          <figure class="figure">
+            <a href="assets/img/thermal-design.jpg" target="_blank" rel="noopener">
+              <img src="assets/img/thermal-design.jpg" alt="Thermal system overview on the rover">
+            </a>
+            <figcaption>Thermal-control layout — RHU heat source, main + back radiators, and the flexible heat-pipe loop. Click to enlarge.</figcaption>
+          </figure>
+        </div>
+        <div class="pcard-cols">
+          <div class="pcard-main">
+            <p>
+              Our rover had to operate inside a permanently-shadowed lunar crater — no sunlight for warmth,
+              surface temperatures from −205 °C to 100 °C, and avionics that had to stay inside a survivable
+              band for the whole mission. I led the thermal design that kept them there, and managed the
+              7-person team through all four design reviews.
+            </p>
+            <p style="font-weight:600;color:var(--ink);margin-top:16px">How I approached it</p>
+            <ul class="wins">
+              <li>With no sun, the problem flips from <em>collecting</em> heat to <em>managing</em> it — I built the design around a radioisotope heater unit (RHU) as a steady source and sized everything to reject the excess</li>
+              <li>Designed the radiator panels in <b>SolidWorks</b>, iterating the geometry to ~22 ft² so heat-flux density dropped <b>~59%</b> — the margin needed to hold the survival band</li>
+              <li>A flexible heat-pipe loop (FHPL) with a thermal switch moves waste heat from the electronics box to the radiators only when needed, so the box doesn't overcool in the cold case</li>
+              <li>Wrote the thermal-balance / vacuum test plan to prove it out, and used mass/power/cost trade studies to steer the design — which also cut estimated project cost <b>~35%</b></li>
+            </ul>
+          </div>
+          <aside class="pcard-side">
+            <div class="tools-wrap">
+              <h4>Tools</h4>
+              <span class="tag">SolidWorks</span><span class="tag">Thermal Design</span><span class="tag">Systems Eng.</span><span class="tag">V&amp;V</span>
+            </div>
+            <div class="links-col">
+              <h4>Links</h4>
+              <a class="btn-link" href="assets/files/Alex_Contreras_LunarRover_CDR_Slides.pdf" target="_blank" rel="noopener">▶ My CDR Slides (29)</a>
+              <a class="btn-link" href="assets/files/lunar-rover-CDR.pdf" target="_blank" rel="noopener">Full CDR</a>
+              <a class="btn-link" href="assets/files/lunar-rover-PDR.pdf" target="_blank" rel="noopener">PDR</a>
+              <a class="btn-link" href="assets/files/lunar-rover-IandT.pdf" target="_blank" rel="noopener">Integration &amp; Test</a>
+              <a class="btn-link" href="assets/files/lunar-rover-Proposal.pdf" target="_blank" rel="noopener">Proposal · SRR · SOW</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shock modeling -->
+    <div class="pcard">
+      <div class="pcard-head">
+        <div class="headmeta">Dec 2025 · UC Irvine</div>
+        <h2 class="big-title">Thermochemical Nonequilibrium Shock Modeling</h2>
+        <div class="headline">Solo project · MATLAB / Python</div>
+      </div>
+      <a href="assets/img/shock-relaxation.jpg" target="_blank" rel="noopener">
+        <img class="pcard-hero clickable" src="assets/img/shock-relaxation.jpg" alt="Post-shock relaxation plots" style="max-height:760px;object-fit:contain">
+      </a>
+      <div class="pcard-body">
+        <div class="pcard-cols">
+          <div class="pcard-main">
+            <p>
+              Behind a strong shock — a hypersonic forebody, or the high-enthalpy flow in a nozzle — gas heats
+              so fast that its energy modes fall out of step: the molecules are translating hot before their
+              vibrational energy catches up. A single-temperature model can't see that gap. I built a 1-D
+              nitrogen model that tracks two temperatures separately so it can.
+            </p>
+            <p style="font-weight:600;color:var(--ink);margin-top:16px">How it works</p>
+            <ul class="wins">
+              <li>Rankine–Hugoniot jump conditions set the state across the shock; a coupled <b>ODE solver</b> then marches species, velocity, and the translational and vibrational temperatures downstream</li>
+              <li>The two temperatures relax toward each other over distance until the flow re-equilibrates — the gap between them is the nonequilibrium I was chasing</li>
+              <li>Post-processed into engineering plots and energy-mode (rotational / vibrational / electronic) population distributions to sanity-check the physics</li>
+            </ul>
+          </div>
+          <aside class="pcard-side">
+            <div class="tools-wrap">
+              <h4>Tools</h4>
+              <span class="tag">Python</span><span class="tag">MATLAB</span><span class="tag">ODE solvers</span><span class="tag">Non-equilibrium</span>
+            </div>
+            <div class="links-col">
+              <h4>Links</h4>
+              <a class="btn-link" href="assets/files/shock-modeling-report.pdf" target="_blank" rel="noopener">Read Full Report</a>
+              <a class="btn-link" href="assets/files/shock-code/main.py" target="_blank" rel="noopener">Code: main.py</a>
+              <a class="btn-link" href="assets/files/shock-code/rh_jump.py" target="_blank" rel="noopener">Code: rh_jump.py</a>
+              <a class="btn-link" href="assets/files/shock-code/simulate.py" target="_blank" rel="noopener">Code: simulate.py</a>
+            </div>
+          </aside>
+        </div>
+        <div class="support">
+          <figure class="figure">
+            <a href="assets/img/shock-energy-modes.jpg" target="_blank" rel="noopener">
+              <img src="assets/img/shock-energy-modes.jpg" alt="Rotational, vibrational, and electronic energy-mode distributions">
+            </a>
+            <figcaption>Energy-mode population distributions (rotational, vibrational, electronic) through the shock layer. Click to enlarge.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PUBLICATIONS ================= -->
+<section class="section exp-section" id="publications">
+  <div class="container">
+    <h2 class="section-title">Publications</h2>
+    <p class="muted" style="margin-bottom:28px">Peer-reviewed research output.</p>
+
+    <div class="pcard">
+      <div class="pcard-head">
+        <div class="headmeta">2024 · npj Advanced Manufacturing (Nature)</div>
+        <h2 class="big-title">Polybutadiene structural effects on dynamic wetting</h2>
+        <div class="headline">S. D. Raissi, M. A. Magaña, <span style="color:var(--accent)">A. Contreras</span>, S. Wei, B. Brettmann &amp; J. Kalman</div>
+      </div>
+      <a href="assets/img/wetting-highspeed.jpg" target="_blank" rel="noopener">
+        <img class="pcard-hero clickable" src="assets/img/wetting-highspeed.jpg" alt="Droplet-impact test rig and high-speed spreading sequence from the paper" style="max-height:720px;object-fit:contain">
+      </a>
+      <div class="pcard-body">
+        <div class="pcard-cols">
+          <div class="pcard-main">
+            <p>
+              Ammonium perchlorate composite propellants power most missiles and launch vehicles. This
+              paper studies how to 3D-print them better: how polybutadiene binder structure governs the
+              dynamic wetting of droplets impacting ammonium perchlorate, the key unknown for binder-jetting
+              additive manufacturing of propellants. Spreading scales with t<sup>1/2</sup> right after
+              impact (inertia-dominated) before a viscous regime; the branched polymer spread up to 25%
+              more by area than the linear one.
+            </p>
+            <p style="font-weight:600;color:var(--ink);margin-top:18px">My contribution — the image-processing pipeline</p>
+            <p>
+              I built the MATLAB pipeline that turned <b>15,000 fps</b> high-speed video into the
+              quantitative data behind the paper's findings — thousands of sub-millimeter frames per test,
+              impossible to measure by hand.
+            </p>
+            <ul class="wins">
+              <li>Freefall analysis via circle-finding to extract initial droplet diameter <b>D₀</b> and impact velocity <b>U₀</b></li>
+              <li>Per-frame spreading: spread diameter, dynamic contact angle (cubic edge fit), and contact-line velocity (finite differencing)</li>
+              <li>Interactive pixel→mm calibration and substrate contact-line detection, then automated cropping across the sequence</li>
+              <li>Normalized to dimensionless spread ratio <b>D/D₀</b> vs <b>t* = t·U₀/D₀</b> and exported the datasets behind the figures</li>
+            </ul>
+          </div>
+          <aside class="pcard-side">
+            <div class="tools-wrap">
+              <h4>Techniques</h4>
+              <span class="tag">MATLAB</span><span class="tag">Image Segmentation</span><span class="tag">Sub-pixel Edge Detection</span><span class="tag">Morphological Filtering</span><span class="tag">Finite-Difference Methods</span><span class="tag">Dimensional Analysis</span>
+            </div>
+            <div class="links-col">
+              <h4>Links</h4>
+              <a class="btn-link" href="assets/files/matlab-wetting-pipeline-code.pdf" target="_blank" rel="noopener">▶ View MATLAB Pipeline</a>
+              <a class="btn-link" href="https://doi.org/10.1038/s44334-024-00007-8" target="_blank" rel="noopener">Read Published Paper</a>
+              <a class="btn-link" href="assets/files/dynamic-wetting-paper.pdf" target="_blank" rel="noopener">Download Paper PDF</a>
+            </div>
+          </aside>
+        </div>
+        <div class="support" style="margin-top:28px">
+          <figure class="figure">
+            <div style="background:#1b2129;border:1px solid var(--line);border-radius:12px;padding:16px">
+              <svg viewBox="0 0 980 660" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif">
+                <defs>
+                  <marker id="ah" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#5a6472"/></marker>
+                </defs>
+                <!-- top -->
+                <rect x="330" y="16" width="320" height="58" rx="12" fill="#333d4c" stroke="#3b4450"/>
+                <text x="490" y="42" text-anchor="middle" fill="#eef1f5" font-size="17" font-weight="700">High-speed image sequences</text>
+                <text x="490" y="62" text-anchor="middle" fill="#9aa4b2" font-size="12">15,000 fps · IPDI &amp; DDI on 80°C surface</text>
+                <line x1="490" y1="74" x2="490" y2="102" stroke="#5a6472" stroke-width="1.5" marker-end="url(#ah)"/>
+                <!-- SETUP -->
+                <text x="36" y="98" fill="#9aa4b2" font-size="12" font-weight="700" letter-spacing="0.5">SETUP (once per test)</text>
+                <g>
+                  <rect x="36" y="108" width="300" height="68" rx="12" fill="#2a323d" stroke="#3b4450"/>
+                  <text x="54" y="132" fill="#6ea8fe" font-size="12" font-weight="700">CALIBRATE</text>
+                  <text x="54" y="152" fill="#eef1f5" font-size="16" font-weight="700">Pixel → mm scale</text>
+                  <text x="54" y="169" fill="#7f8a99" font-size="11" font-family="ui-monospace,Consolas,monospace">funcGetCalibration</text>
+                  <rect x="350" y="108" width="300" height="68" rx="12" fill="#2a323d" stroke="#3b4450"/>
+                  <text x="368" y="132" fill="#6ea8fe" font-size="12" font-weight="700">REFERENCE</text>
+                  <text x="368" y="152" fill="#eef1f5" font-size="16" font-weight="700">Mark contact line</text>
+                  <text x="368" y="169" fill="#7f8a99" font-size="11" font-family="ui-monospace,Consolas,monospace">funcGetContactLines</text>
+                  <rect x="664" y="108" width="290" height="68" rx="12" fill="#2a323d" stroke="#3b4450"/>
+                  <text x="682" y="132" fill="#6ea8fe" font-size="12" font-weight="700">CROP</text>
+                  <text x="682" y="152" fill="#eef1f5" font-size="16" font-weight="700">Isolate droplet</text>
+                  <text x="682" y="169" fill="#7f8a99" font-size="11" font-family="ui-monospace,Consolas,monospace">funcCropImg</text>
+                </g>
+                <line x1="490" y1="176" x2="490" y2="204" stroke="#5a6472" stroke-width="1.5" marker-end="url(#ah)"/>
+                <!-- MAIN -->
+                <text x="36" y="200" fill="#9aa4b2" font-size="12" font-weight="700" letter-spacing="0.5">MAIN PROCESSING — funcDropletProcessing</text>
+                <rect x="36" y="210" width="400" height="74" rx="12" fill="#2a323d" stroke="#3b4450"/>
+                <text x="54" y="234" fill="#6ea8fe" font-size="12" font-weight="700">FREEFALL</text>
+                <text x="54" y="255" fill="#eef1f5" font-size="16" font-weight="700">Droplet size &amp; impact speed</text>
+                <text x="54" y="272" fill="#9aa4b2" font-size="11">circle detection → D₀, U₀</text>
+                <text x="300" y="272" fill="#7f8a99" font-size="11" font-family="ui-monospace,Consolas,monospace">Freefall()</text>
+                <rect x="490" y="210" width="464" height="74" rx="12" fill="#2a323d" stroke="#3b4450"/>
+                <text x="508" y="234" fill="#6ea8fe" font-size="12" font-weight="700">SPREADING (per frame)</text>
+                <text x="508" y="255" fill="#eef1f5" font-size="16" font-weight="700">Segment &amp; measure droplet</text>
+                <text x="508" y="272" fill="#9aa4b2" font-size="11">threshold + morphology cleanup</text>
+                <text x="790" y="272" fill="#7f8a99" font-size="11" font-family="ui-monospace,Consolas,monospace">DynamicSpreading()</text>
+                <line x1="436" y1="247" x2="490" y2="247" stroke="#5a6472" stroke-width="1.5" marker-end="url(#ah)"/>
+                <!-- three -->
+                <line x1="186" y1="284" x2="186" y2="312" stroke="#5a6472" stroke-width="1.5" marker-end="url(#ah)"/>
+                <line x1="500" y1="284" x2="500" y2="312" stroke="#5a6472" stroke-width="1.5" marker-end="url(#ah)"/>
+                <line x1="809" y1="284" x2="809" y2="312" stroke="#5a6472" stroke-width="1.5" marker-end="url(#ah)"/>
+                <rect x="36" y="314" width="300" height="76" rx="12" fill="#2a323d" stroke="#3b4450"/>
+                <text x="54" y="338" fill="#6ea8fe" font-size="12" font-weight="700">GEOMETRY</text>
+                <text x="54" y="359" fill="#eef1f5" font-size="16" font-weight="700">Spread diameter</text>
+                <text x="54" y="377" fill="#7f8a99" font-size="11" font-family="ui-monospace,Consolas,monospace">getSpread()</text>
+                <rect x="350" y="314" width="300" height="76" rx="12" fill="#2a323d" stroke="#3b4450"/>
+                <text x="368" y="338" fill="#6ea8fe" font-size="12" font-weight="700">ANGLE</text>
+                <text x="368" y="359" fill="#eef1f5" font-size="16" font-weight="700">Dynamic contact angle</text>
+                <text x="368" y="377" fill="#7f8a99" font-size="11" font-family="ui-monospace,Consolas,monospace">DynamicContactAngle() · cubic fit</text>
+                <rect x="664" y="314" width="290" height="76" rx="12" fill="#2a323d" stroke="#3b4450"/>
+                <text x="682" y="338" fill="#6ea8fe" font-size="12" font-weight="700">KINEMATICS</text>
+                <text x="682" y="359" fill="#eef1f5" font-size="16" font-weight="700">Contact-line velocity</text>
+                <text x="682" y="377" fill="#7f8a99" font-size="11" font-family="ui-monospace,Consolas,monospace">SpreadCalcs() · finite diff.</text>
+                <!-- converge -->
+                <line x1="186" y1="390" x2="186" y2="430" stroke="#5a6472" stroke-width="1.5"/>
+                <line x1="809" y1="390" x2="809" y2="430" stroke="#5a6472" stroke-width="1.5"/>
+                <line x1="186" y1="430" x2="809" y2="430" stroke="#5a6472" stroke-width="1.5"/>
+                <line x1="500" y1="390" x2="500" y2="464" stroke="#5a6472" stroke-width="1.5" marker-end="url(#ah)"/>
+                <!-- normalize -->
+                <rect x="270" y="466" width="440" height="76" rx="12" fill="#2a323d" stroke="#3b4450"/>
+                <text x="288" y="490" fill="#6ea8fe" font-size="12" font-weight="700">NORMALIZE</text>
+                <text x="288" y="511" fill="#eef1f5" font-size="16" font-weight="700">Dimensionless t* &amp; spread ratio D/D₀</text>
+                <text x="288" y="529" fill="#7f8a99" font-size="11" font-family="ui-monospace,Consolas,monospace">t* = t·U₀ / D₀</text>
+                <line x1="490" y1="542" x2="490" y2="570" stroke="#5a6472" stroke-width="1.5" marker-end="url(#ah)"/>
+                <!-- exported -->
+                <rect x="240" y="572" width="500" height="62" rx="12" fill="#333d4c" stroke="#3b4450"/>
+                <text x="490" y="600" text-anchor="middle" fill="#eef1f5" font-size="17" font-weight="700">Exported results</text>
+                <text x="490" y="620" text-anchor="middle" fill="#9aa4b2" font-size="12">dataSheet.xlsx · dataMat.mat → spreading analysis</text>
+              </svg>
+            </div>
+            <figcaption>How the MATLAB pipeline runs — from raw high-speed frames to the exported spreading dataset.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <a href="mailto:contre14@uci.edu">Email</a>·
+      <a href="https://www.linkedin.com/in/alex-contreras-ac" target="_blank" rel="noopener">LinkedIn</a>·
+      <a href="assets/files/Alex_Contreras_Resume.pdf">Resume</a>
+    </div>
+    <p style="margin-top:10px">© <span id="yr"></span> Alexander Contreras · Irvine, CA</p>
+  </div>
+</footer>
+<script>
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  function scrollToHash(){ if(location.hash){ var el=document.querySelector(location.hash); if(el) el.scrollIntoView(); } }
+  window.addEventListener('load', function(){ setTimeout(scrollToHash, 60); });
+</script>
+</body>
 </html>

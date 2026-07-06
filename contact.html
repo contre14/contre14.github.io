@@ -2,10 +2,62 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="0; url=index.html#contact">
-<link rel="canonical" href="index.html#contact">
-<title>Moved · Alexander Contreras</title>
-<script>location.replace("index.html#contact");</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Alexander Contreras</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body><p>This page has moved to <a href="index.html#contact">Get in touch</a>.</p></body>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">Alexander Contreras</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li class="dropdown">
+        <a href="experience.html">Experience</a>
+        <div class="dropdown-menu">
+          <a href="experience.html#research">Research</a>
+          <a href="experience.html#projects">Projects</a>
+          <a href="experience.html#publications">Publications</a>
+        </div>
+      </li>
+      <li><a href="awards.html">Awards</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="section">
+  <div class="container center">
+    <h1>Get in touch</h1>
+    <p class="lead muted" style="margin:14px auto 0">
+      Seeking Fall 2026 propulsion / thermal-fluids internships. U.S. citizen (ITAR-eligible).
+      Feel free to reach out.
+    </p>
+    <div class="hero-cta" style="justify-content:center;margin-top:28px">
+      <a class="btn" href="mailto:contre14@uci.edu">Email me</a>
+      <a class="btn btn--ghost" href="assets/files/Alex_Contreras_Resume.pdf">Download resume</a>
+    </div>
+    <div style="margin-top:32px">
+      <a class="tag" href="mailto:contre14@uci.edu">contre14@uci.edu</a>
+      <a class="tag" href="tel:+19495403239">(949) 540-3239</a>
+      <a class="tag" href="https://www.linkedin.com/in/alex-contreras-ac" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <a href="mailto:contre14@uci.edu">Email</a>·
+      <a href="https://www.linkedin.com/in/alex-contreras-ac" target="_blank" rel="noopener">LinkedIn</a>·
+      <a href="assets/files/Alex_Contreras_Resume.pdf">Resume</a>
+    </div>
+    <p style="margin-top:10px">© <span id="yr"></span> Alexander Contreras · Irvine, CA</p>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
 </html>
