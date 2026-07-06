@@ -3,17 +3,16 @@
    Edit the variables below to recolor the whole site at once.
    ============================================================ */
 :root{
-  --accent:#24508f;        /* primary accent (navy) — from uploaded style */
-  --accent-dark:#1d3f73;   /* hover state                            */
-  --accent-soft:#eaf1fb;   /* soft accent background (pills, banners) */
-  --ink:#16233b;           /* main text (navy-tinted)                */
-  --muted:#4b5875;         /* secondary text                         */
-  --line:#e4e8ef;          /* borders / dividers                     */
+  --accent:#2563eb;        /* primary accent (links, buttons)        */
+  --accent-dark:#1e40af;   /* hover state                            */
+  --ink:#1a1a1a;           /* main text                              */
+  --muted:#5c6470;         /* secondary text                         */
+  --line:#e5e7eb;          /* borders / dividers                     */
   --bg:#ffffff;            /* page background                        */
-  --bg-soft:#f5f7fa;       /* alternating section background         */
+  --bg-soft:#f7f8fa;       /* alternating section background         */
   --max:1320px;            /* content max width                      */
   --radius:12px;
-  --shadow:0 1px 3px rgba(22,35,59,.06), 0 8px 24px rgba(22,35,59,.06);
+  --shadow:0 1px 3px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.05);
   --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
 
@@ -63,7 +62,7 @@ p{color:var(--muted)}
   display:flex;align-items:center;justify-content:space-between;
   max-width:var(--max);margin:0 auto;padding:18px 24px;
 }
-.brand{font-weight:800;font-size:1.35rem;color:var(--ink);text-transform:uppercase;letter-spacing:.03em}
+.brand{font-weight:800;font-size:1.45rem;color:var(--ink)}
 .brand:hover{text-decoration:none}
 .nav-toggle{display:none;background:none;border:0;font-size:1.5rem;cursor:pointer}
 .nav-links{display:flex;align-items:center;gap:16px;list-style:none}
@@ -71,7 +70,7 @@ p{color:var(--muted)}
   color:var(--ink);padding:12px 16px;border-radius:8px;font-size:1.12rem;font-weight:500;
 }
 .nav-links a:hover{background:var(--bg-soft);text-decoration:none}
-.nav-links a.active{color:var(--accent);font-weight:700;background:var(--accent-soft)}
+.nav-links a.active{color:var(--accent);font-weight:700}
 
 /* dropdown */
 .dropdown{position:relative}
@@ -87,8 +86,7 @@ p{color:var(--muted)}
 
 /* ---------- Hero ---------- */
 .hero{padding:72px 0;background:var(--bg-soft);border-bottom:1px solid var(--line)}
-.eyebrow{letter-spacing:.14em;text-transform:uppercase}
-.hero .eyebrow{color:var(--accent);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.9rem}
+.hero .eyebrow{color:var(--accent);font-weight:600;letter-spacing:.04em;text-transform:uppercase;font-size:.9rem}
 .hero p.lead{margin-top:16px}
 .hero-cta{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
@@ -107,7 +105,7 @@ p{color:var(--muted)}
 
 /* contact pills */
 .contact-pill{display:inline-block;font-size:1.02rem;font-weight:600;color:var(--accent);
-  background:var(--accent-soft);border:1px solid #cddcf3;
+  background:rgba(37,99,235,.06);border:1px solid rgba(37,99,235,.35);
   padding:10px 18px;border-radius:999px;margin:6px 8px 0 0}
 .contact-pill:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
 
@@ -125,10 +123,8 @@ p{color:var(--muted)}
   background:#fff;border:1px solid var(--line);border-radius:var(--radius);
   padding:24px;box-shadow:var(--shadow);
 }
-.card{transition:transform .12s, box-shadow .12s}
-a.card:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(22,35,59,.10);text-decoration:none}
 .card h3{margin-bottom:6px}
-.card .meta{font-size:.85rem;color:var(--accent);font-weight:600;letter-spacing:.06em;margin-bottom:8px}
+.card .meta{font-size:.85rem;color:var(--accent);font-weight:600;margin-bottom:8px}
 .card-img{
   border-radius:10px;border:1px solid var(--line);margin-bottom:16px;
   aspect-ratio:16/9;object-fit:cover;width:100%;background:var(--bg-soft);
