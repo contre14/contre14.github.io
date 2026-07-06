@@ -107,7 +107,7 @@ p{color:var(--muted)}
 
 /* contact pills */
 .contact-pill{display:inline-block;font-size:1.02rem;font-weight:600;color:var(--accent);
-  background:rgba(37,99,235,.06);border:1px solid rgba(37,99,235,.35);
+  background:var(--accent-soft);border:1px solid #cddcf3;
   padding:10px 18px;border-radius:999px;margin:6px 8px 0 0}
 .contact-pill:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
 
