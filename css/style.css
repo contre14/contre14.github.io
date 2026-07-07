@@ -2,7 +2,11 @@
    Portfolio — clean corporate theme
    Edit the variables below to recolor the whole site at once.
    ============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+/* self-hosted fonts — Inter (variable 400-700) + Space Grotesk 700, latin subset */
+@font-face{font-family:'Inter';font-style:normal;font-weight:400 700;font-display:swap;
+  src:url('../assets/fonts/inter-latin.woff2') format('woff2')}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:700;font-display:swap;
+  src:url('../assets/fonts/spacegrotesk-latin.woff2') format('woff2')}
 
 :root{
   --accent:#2563eb;        /* primary accent (links, buttons)        */
