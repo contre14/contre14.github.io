@@ -168,7 +168,7 @@ p{color:var(--muted)}
 .pcard-head h2{margin-bottom:4px}
 .pcard-head .role{font-weight:600;color:var(--ink);margin:0}
 .pcard-hero{width:100%;display:block;background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.pcard-body{padding:28px}
+.pcard-body{padding:24px 28px}
 .pcard-cols{display:grid;grid-template-columns:1fr 320px;gap:40px;align-items:start}
 .pcard-main{min-width:0}
 .pcard-main p{max-width:none}
