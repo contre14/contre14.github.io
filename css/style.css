@@ -2,6 +2,8 @@
    Portfolio — clean corporate theme
    Edit the variables below to recolor the whole site at once.
    ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+
 :root{
   --accent:#2563eb;        /* primary accent (links, buttons)        */
   --accent-dark:#1e40af;   /* hover state                            */
@@ -12,8 +14,10 @@
   --bg-soft:#fafafb;       /* alternating section background         */
   --max:1120px;            /* content max width                      */
   --radius:16px;
-  --shadow:0 1px 3px rgba(0,0,0,.05), 0 10px 30px rgba(0,0,0,.07);
-  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --shadow:0 1px 2px rgba(16,42,90,.06), 0 12px 34px rgba(16,42,90,.09);
+  --shadow-lift:0 18px 44px rgba(16,42,90,.16);
+  --font:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --font-head:"Space Grotesk","Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -29,7 +33,7 @@ body{
 a{color:var(--accent);text-decoration:none}
 a:hover{color:var(--accent-dark);text-decoration:underline}
 img{max-width:100%;display:block}
-h1,h2,h3{line-height:1.2;font-weight:700}
+h1,h2,h3{line-height:1.2;font-weight:700;font-family:var(--font-head);letter-spacing:-.02em}
 h1{font-size:3.7rem;font-weight:800;letter-spacing:-.01em}
 h2{font-size:2.35rem;margin-bottom:.6rem}
 h3{font-size:1.5rem}
@@ -42,6 +46,11 @@ p{color:var(--muted)}
 .lead{font-size:1.2rem;max-width:700px}
 .center{text-align:center}
 .muted{color:var(--muted)}
+
+/* centered section heading — accent underline */
+.section h2.center{position:relative;padding-bottom:16px}
+.section h2.center::after{content:"";position:absolute;left:50%;bottom:0;transform:translateX(-50%);
+  width:56px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--accent),var(--accent-dark))}
 
 /* placeholder marker — easy to spot, easy to grep for "PLACEHOLDER" */
 .ph{
@@ -64,7 +73,7 @@ p{color:var(--muted)}
   display:flex;align-items:center;justify-content:space-between;
   max-width:var(--max);margin:0 auto;padding:18px 24px;
 }
-.brand{font-weight:800;font-size:1.45rem;color:var(--ink)}
+.brand{font-weight:700;font-size:1.45rem;color:var(--ink);font-family:var(--font-head);letter-spacing:-.02em}
 .brand:hover{text-decoration:none}
 .nav-toggle{display:none;background:none;border:0;font-size:1.5rem;cursor:pointer}
 .nav-links{display:flex;align-items:center;gap:24px;list-style:none}
@@ -90,7 +99,11 @@ p{color:var(--muted)}
 .dropdown-menu a{display:block}
 
 /* ---------- Hero ---------- */
-.hero{padding:84px 0 76px;background:var(--bg-soft)}
+.hero{padding:84px 0 76px;position:relative;overflow:hidden;
+  background:
+    radial-gradient(680px 420px at 82% -8%, rgba(37,99,235,.10), transparent 60%),
+    radial-gradient(560px 360px at 0% 108%, rgba(37,99,235,.06), transparent 55%),
+    linear-gradient(180deg,#f7f9fc,#eef2f8)}
 .hero .eyebrow{color:var(--accent);font-weight:600;letter-spacing:.04em;text-transform:uppercase;font-size:.9rem}
 .hero p.lead{margin-top:16px}
 .hero-cta{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}
@@ -102,9 +115,10 @@ p{color:var(--muted)}
 /* ---------- Buttons ---------- */
 .btn{
   display:inline-block;padding:14px 26px;border-radius:10px;font-weight:600;font-size:1.05rem;
-  background:var(--accent);color:#fff;border:1px solid var(--accent);
+  background:linear-gradient(180deg,var(--accent),var(--accent-dark));color:#fff;border:1px solid var(--accent-dark);
+  box-shadow:0 6px 16px rgba(37,99,235,.28);transition:transform .14s ease,box-shadow .14s ease,filter .14s ease;
 }
-.btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);color:#fff;text-decoration:none}
+.btn:hover{filter:brightness(1.06);transform:translateY(-2px);box-shadow:0 10px 24px rgba(37,99,235,.34);color:#fff;text-decoration:none}
 .btn--ghost{background:transparent;color:var(--accent)}
 .btn--ghost:hover{background:var(--bg-soft);color:var(--accent-dark)}
 
@@ -127,7 +141,9 @@ p{color:var(--muted)}
 .card{
   background:#fff;border:1px solid var(--line);border-radius:var(--radius);
   padding:24px;box-shadow:var(--shadow);
+  transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease;
 }
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lift);border-color:rgba(37,99,235,.35)}
 .card h3{margin-bottom:6px}
 .card .meta{font-size:.85rem;color:var(--accent);font-weight:600;margin-bottom:8px}
 .card-img{
